@@ -1,0 +1,150 @@
+//
+// Glyphicon Placeholders
+// --------------------------------------------------
+%glyphicon { font-family: "UX1 Glyphicons"; font-size: 16px; }
+%glyphicon-xs { font-size: 14px; }
+%glyphicon-sm { font-size: 16px; }
+%glyphicon-md {	font-size: 20px; }
+%glyphicon-lg {	font-size: 30px; }
+
+//
+// Glyphicon Mixins
+// --------------------------------------------------
+@mixin x1-icon-stack($size) {
+	@include square($size);
+	vertical-align: middle;
+	display: inline-block;
+	position: relative;
+	line-height: $size;
+	font-size: $size;
+}
+
+//
+// Glyphicon Variables
+// --------------------------------------------------
+$glyphicon-view-tree: "\e900";
+$glyphicon-view-list: "\e901";
+$glyphicon-forum: "\e902";
+$glyphicon-payment-creditcard: "\e903";
+$glyphicon-chevron-down-double: "\e800";
+$glyphicon-chevron-up-double: "\e801";
+$glyphicon-analyze: "\e658";
+$glyphicon-category-select: "\e659";
+$glyphicon-date-picker: "\e65a";
+$glyphicon-gallery: "\e65b";
+$glyphicon-locked: "\e65c";
+$glyphicon-unlocked: "\e66d";
+$glyphicon-prefs: "\e65d";
+$glyphicon-preview: "\e65e";
+$glyphicon-circle: "\e660";
+$glyphicon-circle-empty: "\e661";
+$glyphicon-diamond: "\e662";
+$glyphicon-diamond-empty: "\e663";
+$glyphicon-pentagon: "\e664";
+$glyphicon-pentagon-empty: "\e665";
+$glyphicon-square: "\e666";
+$glyphicon-square-empty: "\e667";
+$glyphicon-triangle: "\e668";
+$glyphicon-triangle-empty: "\e669";
+$glyphicon-shapes: "\e66a";
+$glyphicon-snapshot-select: "\e66b";
+$glyphicon-sub-select: "\e66c";
+$glyphicon-view-full: "\e66e";
+$glyphicon-view-split: "\e66f";
+$glyphicon-view-thumb: "\e670";
+$glyphicon-zoom-in: "\e671";
+$glyphicon-zoom-out: "\e674";
+$glyphicon-zoom-more: "\e673";
+$glyphicon-zoom-less: "\e672";
+$glyphicon-or: "\e675";
+$glyphicon-and: "\e65f";
+$glyphicon-blank: "\e69a";
+$glyphicon-gear:  "\e69b";
+$glyphicon-star-empty: "\e656";
+$glyphicon-star: "\e657";
+$glyphicon-world: "\e653";
+$glyphicon-people-one-add: "\e654";
+$glyphicon-people-group: "\e655";
+$glyphicon-people-two: "\e652";
+$glyphicon-history: "\e64f";
+$glyphicon-arrow-right: "\e64b";
+$glyphicon-arrow-left: "\e64c";
+$glyphicon-arrow-up: "\e64d";
+$glyphicon-arrow-down: "\e64e";
+$glyphicon-import: "\e650";
+$glyphicon-error-sign: "\e651";
+$glyphicon-fast-forward: "\e603";
+$glyphicon-fast-backward: "\e646";
+$glyphicon-triangle-right: "\e647";
+$glyphicon-triangle-left: "\e648";
+$glyphicon-chevron-left-double: "\e649";
+$glyphicon-chevron-right-double: "\e64a";
+$glyphicon-resize: "\e645";
+$glyphicon-option-horizontal: "\e643";
+$glyphicon-option-vertical: "\e644";
+$glyphicon-filter-clear: "\e63d";
+$glyphicon-share: "\e63e";
+$glyphicon-trash: "\e63f";
+$glyphicon-doc-properties: "\e640";
+$glyphicon-doc-new: "\e641";
+$glyphicon-doc-add: "\e642";
+$glyphicon-refresh: "\e63c";
+$glyphicon-grip-vertical: "\e63b";
+$glyphicon-calc-divide: "\e635";
+$glyphicon-calc-equal: "\e636";
+$glyphicon-calc-minus: "\e637";
+$glyphicon-calc-multiply: "\e638";
+$glyphicon-calc-delete: "\e639";
+$glyphicon-calc-plus: "\e63a";
+$glyphicon-file-csv: "\e62f";
+$glyphicon-file-excel: "\e630";
+$glyphicon-export: "\e631";
+$glyphicon-file-pdf: "\e632";
+$glyphicon-file-png: "\e633";
+$glyphicon-lightbulb: "\e61a";
+$glyphicon-tools-fill: "\e61b";
+$glyphicon-tools: "\e61c";
+$glyphicon-gears-fill: "\e61d";
+$glyphicon-gears: "\e61e";
+$glyphicon-resize-full: "\e61f";
+$glyphicon-resize-small: "\e620";
+$glyphicon-menu-hamburger: "\e600";
+$glyphicon-plus: "\e605";
+$glyphicon-calendar: "\e601";
+$glyphicon-calendar-schedule: "\e60a";
+$glyphicon-remove: "\e604";
+$glyphicon-envelope: "\e608";
+$glyphicon-envelope-fill: "\e60b";
+$glyphicon-file: "\e602";
+$glyphicon-chevron-up: "\e60d";
+$glyphicon-chevron-right: "\e60e";
+$glyphicon-chevron-left: "\e60f";
+$glyphicon-chevron-down: "\e610";
+$glyphicon-stats: "\e611";
+$glyphicon-copy: "\e613";
+$glyphicon-property: "\e609";
+$glyphicon-paste: "\e614";
+$glyphicon-pushpin: "\e616";
+$glyphicon-user: "\e612";
+$glyphicon-save: "\e607";
+$glyphicon-save-as: "\e606";
+$glyphicon-search: "\e619";
+$glyphicon-info-circle: "\e621";
+$glyphicon-info-fill: "\e625";
+$glyphicon-question-circle: "\e626";
+$glyphicon-question-sign: "\e627";
+$glyphicon-ok-circle: "\e615";
+$glyphicon-warning-sign: "\e617";
+$glyphicon-error-circle: "\e618";
+$glyphicon-filter: "\e628";
+$glyphicon-filter-fill: "\e629";
+$glyphicon-chevron-up-down: "\e62a";
+$glyphicon-tag: "\e62b";
+$glyphicon-folder-open: "\e60c";
+$glyphicon-folder-close: "\e62c";
+$glyphicon-folder-open-fill: "\e62d";
+$glyphicon-ok: "\e62e";
+$glyphicon-edit: "\e634";
+$glyphicon-components: "\e622";
+$glyphicon-contribution: "\e623";
+$glyphicon-versioning: "\e624";

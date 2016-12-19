@@ -1,0 +1,18 @@
+pre {
+  max-height: 500px; }
+
+.bs-example .nav-demo-btn {
+  margin-bottom: 20px; }
+
+.x1-navigation-wrap {
+  position: relative;
+  height: 500px; }
+  .x1-navigation-wrap .x1-ui-left-navigation {
+    position: absolute;
+    top: 0; }
+
+.sub-template {
+  background-color: #676867;
+  padding: 10px 20px;
+  color: #fff;
+  margin: 0; }

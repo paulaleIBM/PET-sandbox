@@ -1,0 +1,17 @@
+
+[dir="rtl"] {
+  .modal-footer {
+	text-align: left;
+	.btn + .btn {
+	  margin-left: 0;
+	  margin-right: 5px;
+	}
+	.btn-group .btn + .btn {
+	  margin-left: 0;
+	  margin-right: -1px;
+	}
+	.btn-block + .btn-block {
+	  margin-right: 0;
+	}
+  }
+}

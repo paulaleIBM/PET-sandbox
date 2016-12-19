@@ -1,0 +1,29 @@
+
+[dir="rtl"] {
+  .navbar {
+	.container-fluid {
+	  padding: 0 0 0 20px;
+	}
+  }
+
+  .navbar-toggle {
+	float: right;
+  }
+
+  .navbar-nav.navbar-right:last-child {
+	margin-right: 0;
+	margin-left: -20px;
+  }
+
+  .nav.navbar-right > li {
+	border-left: none;
+	border-right: 1px solid $gray40;
+
+	> a {
+	  .glyphicon {
+		margin-right: 0;
+		margin-left: 5px;
+	  }
+	}
+  }
+}

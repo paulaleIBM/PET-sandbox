@@ -1,0 +1,17 @@
+@media screen {
+  [dir="rtl"] x1-top-navigation .navbar-inverse .btn-hamburger {
+    margin-right: -10px;
+    margin-left: initial; }
+  [dir="rtl"] x1-top-navigation .navbar-inverse .navbar-brand .badge {
+    margin-right: 10px;
+    margin-left: initial; }
+  [dir="rtl"] x1-top-navigation .navbar-inverse .navbar-breadcrumb {
+    margin: 0 -10px 0 0; }
+    [dir="rtl"] x1-top-navigation .navbar-inverse .navbar-breadcrumb li.active:before {
+      padding-right: initial;
+      padding-left: 8px; }
+  [dir="rtl"] x1-top-navigation .navbar-inverse .btn-mobile {
+    padding: 0 0 0 5px; }
+  [dir="rtl"] x1-top-navigation .navbar-inverse .navbar-nav .navbar-brand {
+    padding-right: initial;
+    padding-left: 10px; } }

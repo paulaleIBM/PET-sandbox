@@ -1,0 +1,64 @@
+/**
+ * @todo deprecate these eventuallyyyyyy
+ */
+/*
+ * end
+ **/
+
+/**
+ * @todo deprecate these eventuallyyyyyy
+ */
+/*
+ * end
+ **/
+.x1-ui-modal.modal.error .modal-header {
+  background-color: #E71D32; }
+  .x1-ui-modal.modal.error .modal-header .modal-title {
+    color: #FFFFFF; }
+  .x1-ui-modal.modal.error .modal-header button.close {
+    line-height: 44px;
+    right: 16px; }
+    .x1-ui-modal.modal.error .modal-header button.close:hover span,
+    .x1-ui-modal.modal.error .modal-header button.close:focus span {
+      border-color: #FFFFFF; }
+    .x1-ui-modal.modal.error .modal-header button.close .glyphicon {
+      font-size: inherit;
+      color: #FFFFFF; }
+
+.x1-ui-modal.modal.warning .modal-header {
+  background-color: #FDD600; }
+  .x1-ui-modal.modal.warning .modal-header .modal-title {
+    color: #5A5A5A; }
+  .x1-ui-modal.modal.warning .modal-header button.close {
+    line-height: 44px;
+    right: 16px; }
+    .x1-ui-modal.modal.warning .modal-header button.close:hover span,
+    .x1-ui-modal.modal.warning .modal-header button.close:focus span {
+      border-color: #5A5A5A; }
+    .x1-ui-modal.modal.warning .modal-header button.close .glyphicon {
+      font-size: inherit;
+      color: #5A5A5A; }
+
+.x1-ui-modal.modal.information .modal-header {
+  background-color: #5AAAFA; }
+  .x1-ui-modal.modal.information .modal-header .modal-title {
+    color: #FFFFFF; }
+  .x1-ui-modal.modal.information .modal-header button.close {
+    line-height: 44px;
+    right: 16px; }
+    .x1-ui-modal.modal.information .modal-header button.close:hover span,
+    .x1-ui-modal.modal.information .modal-header button.close:focus span {
+      border-color: #FFFFFF; }
+    .x1-ui-modal.modal.information .modal-header button.close .glyphicon {
+      font-size: inherit;
+      color: #FFFFFF; }
+
+.x1-ui-modal.modal button.close {
+  line-height: 44px;
+  right: 16px; }
+  .x1-ui-modal.modal button.close:hover span,
+  .x1-ui-modal.modal button.close:focus span {
+    border-color: #FFFFFF; }
+  .x1-ui-modal.modal button.close .glyphicon {
+    font-size: inherit;
+    color: #FFFFFF; }

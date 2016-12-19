@@ -1,0 +1,252 @@
+/**
+ *
+ * Licensed Materials – Property of IBM
+ *
+ * left-navigation.mixins.scss
+ *
+ * (C) Copyright IBM Corporation 2015.
+ * U.S. Government Users Restricted Rights:  Use, duplication or disclosure
+ * restricted by GSA ADP Schedule Contract with IBM Corp.
+ *
+ */
+/* X1 UI MIXINS =======================*/
+/**
+ *
+ * Licensed Materials – Property of IBM
+ *
+ * left-navigation.scss
+ *
+ * (C) Copyright IBM Corporation 2015.
+ * U.S. Government Users Restricted Rights:  Use, duplication or disclosure
+ * restricted by GSA ADP Schedule Contract with IBM Corp.
+ *
+ */
+/* X1 UI MIXINS =======================*/
+/**
+ *
+ * Licensed Materials – Property of IBM
+ *
+ * left-navigation.variables.scss
+ *
+ * (C) Copyright IBM Corporation 2015.
+ * U.S. Government Users Restricted Rights:  Use, duplication or disclosure
+ * restricted by GSA ADP Schedule Contract with IBM Corp.
+ *
+ */
+/* X1 UI MIXINS =======================*/
+/**
+ *
+ * Licensed Materials – Property of IBM
+ *
+ * left-navigation.mixins.scss
+ *
+ * (C) Copyright IBM Corporation 2015.
+ * U.S. Government Users Restricted Rights:  Use, duplication or disclosure
+ * restricted by GSA ADP Schedule Contract with IBM Corp.
+ *
+ */
+/* X1 UI MIXINS =======================*/
+.x1-ui-left-navigation {
+  -webkit-transition: all, 0.25s, ease-in-out;
+  -o-transition: all, 0.25s, ease-in-out;
+  transition: all, 0.25s, ease-in-out;
+  width: 260px;
+  background-color: #777677;
+  overflow: auto;
+  display: block;
+  position: fixed;
+  top: 40px;
+  bottom: 0;
+  left: 0;
+  z-index: 10; }
+  .x1-ui-left-navigation.ng-hide {
+    left: -100%; }
+  .x1-ui-left-navigation .panel-group {
+    margin-bottom: 0; }
+    .x1-ui-left-navigation .panel-group .panel {
+      -webkit-box-shadow: 0 1px 0 #959595;
+      box-shadow: 0 1px 0 #959595;
+      overflow: hidden;
+      border-radius: 0;
+      border: none;
+      margin-bottom: 1px; }
+      .x1-ui-left-navigation .panel-group .panel.active {
+        -webkit-box-shadow: none;
+        box-shadow: none; }
+      .x1-ui-left-navigation .panel-group .panel + .panel {
+        margin-top: 0; }
+      .x1-ui-left-navigation .panel-group .panel .panel-heading {
+        background-color: #777677;
+        height: 50px;
+        border: none;
+        border-bottom: 1px solid #5A5A5A;
+        border-radius: 0;
+        padding: 0;
+        margin: 0; }
+        .x1-ui-left-navigation .panel-group .panel .panel-heading:hover {
+          background-color: #959595; }
+        .x1-ui-left-navigation .panel-group .panel .panel-heading .panel-title {
+          color: #FFFFFF; }
+          .x1-ui-left-navigation .panel-group .panel .panel-heading .panel-title > .accordion-toggle {
+            height: 100%;
+            text-decoration: none;
+            cursor: pointer;
+            display: block;
+            position: relative; }
+            .x1-ui-left-navigation .panel-group .panel .panel-heading .panel-title > .accordion-toggle:focus {
+              background-color: #959595; }
+            .x1-ui-left-navigation .panel-group .panel .panel-heading .panel-title > .accordion-toggle .heading-icon {
+              width: 50px;
+              line-height: 49px;
+              position: absolute; }
+            .x1-ui-left-navigation .panel-group .panel .panel-heading .panel-title > .accordion-toggle .name {
+              position: relative;
+              margin-left: 50px;
+              line-height: 50px;
+              padding: 0 15px;
+              display: block;
+              text-overflow: ellipsis;
+              overflow: hidden;
+              white-space: nowrap; }
+            .x1-ui-left-navigation .panel-group .panel .panel-heading .panel-title > .accordion-toggle .right-icon {
+              position: absolute;
+              line-height: 40px;
+              color: #5A5A5A;
+              right: 20px;
+              top: 0; }
+        .x1-ui-left-navigation .panel-group .panel .panel-heading + .panel-collapse > .panel-body {
+          border: solid #777677;
+          border-width: 0 1px;
+          padding: 0; }
+          .x1-ui-left-navigation .panel-group .panel .panel-heading + .panel-collapse > .panel-body .panel {
+            border-bottom: 1px solid #C7C7C7;
+            margin: 0; }
+          .x1-ui-left-navigation .panel-group .panel .panel-heading + .panel-collapse > .panel-body .panel-heading {
+            background-color: #efefef;
+            height: 40px;
+            border: none; }
+            .x1-ui-left-navigation .panel-group .panel .panel-heading + .panel-collapse > .panel-body .panel-heading .name {
+              padding: 0 40px 0 20px;
+              line-height: 40px;
+              font-size: 14px;
+              color: #464646;
+              margin: 0; }
+      .x1-ui-left-navigation .panel-group .panel.understand > .panel-heading .heading-icon {
+        background-color: #754d88; }
+      .x1-ui-left-navigation .panel-group .panel.understand.active > .panel-heading {
+        background-color: #754d88; }
+        .x1-ui-left-navigation .panel-group .panel.understand.active > .panel-heading .panel-title > .accordion-toggle:focus {
+          background-color: #754d88; }
+      .x1-ui-left-navigation .panel-group .panel.understand > .panel-collapse .panel:hover .panel-heading {
+        background-color: rgba(117, 77, 136, 0.1); }
+      .x1-ui-left-navigation .panel-group .panel.understand > .panel-collapse .panel.active.reveal-open > .panel-heading {
+        background-color: #754d88; }
+      .x1-ui-left-navigation .panel-group .panel.understand > .panel-collapse .panel.active .panel-heading {
+        background-color: rgba(117, 77, 136, 0.2);
+        border-left: 3px solid #754d88; }
+      .x1-ui-left-navigation .panel-group .panel.understand > .panel-collapse .panel .accordion-toggle:focus {
+        background-color: rgba(117, 77, 136, 0.1); }
+      .x1-ui-left-navigation .panel-group .panel.plan > .panel-heading .heading-icon {
+        background-color: #f19027; }
+      .x1-ui-left-navigation .panel-group .panel.plan.active > .panel-heading {
+        background-color: #f19027; }
+        .x1-ui-left-navigation .panel-group .panel.plan.active > .panel-heading .panel-title > .accordion-toggle:focus {
+          background-color: #f19027; }
+      .x1-ui-left-navigation .panel-group .panel.plan > .panel-collapse .panel:hover .panel-heading {
+        background-color: rgba(241, 144, 39, 0.1); }
+      .x1-ui-left-navigation .panel-group .panel.plan > .panel-collapse .panel.active.reveal-open > .panel-heading {
+        background-color: #f19027; }
+      .x1-ui-left-navigation .panel-group .panel.plan > .panel-collapse .panel.active .panel-heading {
+        background-color: rgba(241, 144, 39, 0.2);
+        border-left: 3px solid #f19027; }
+      .x1-ui-left-navigation .panel-group .panel.plan > .panel-collapse .panel .accordion-toggle:focus {
+        background-color: rgba(241, 144, 39, 0.1); }
+      .x1-ui-left-navigation .panel-group .panel.design > .panel-heading .heading-icon {
+        background-color: #00b2ef; }
+      .x1-ui-left-navigation .panel-group .panel.design.active > .panel-heading {
+        background-color: #00b2ef; }
+        .x1-ui-left-navigation .panel-group .panel.design.active > .panel-heading .panel-title > .accordion-toggle:focus {
+          background-color: #00b2ef; }
+      .x1-ui-left-navigation .panel-group .panel.design > .panel-collapse .panel:hover .panel-heading {
+        background-color: rgba(0, 178, 239, 0.1); }
+      .x1-ui-left-navigation .panel-group .panel.design > .panel-collapse .panel.active.reveal-open > .panel-heading {
+        background-color: #00b2ef; }
+      .x1-ui-left-navigation .panel-group .panel.design > .panel-collapse .panel.active .panel-heading {
+        background-color: rgba(0, 178, 239, 0.2);
+        border-left: 3px solid #00b2ef; }
+      .x1-ui-left-navigation .panel-group .panel.design > .panel-collapse .panel .accordion-toggle:focus {
+        background-color: rgba(0, 178, 239, 0.1); }
+      .x1-ui-left-navigation .panel-group .panel.build > .panel-heading .heading-icon {
+        background-color: #008a52; }
+      .x1-ui-left-navigation .panel-group .panel.build.active > .panel-heading {
+        background-color: #008a52; }
+        .x1-ui-left-navigation .panel-group .panel.build.active > .panel-heading .panel-title > .accordion-toggle:focus {
+          background-color: #008a52; }
+      .x1-ui-left-navigation .panel-group .panel.build > .panel-collapse .panel:hover .panel-heading {
+        background-color: rgba(0, 138, 82, 0.1); }
+      .x1-ui-left-navigation .panel-group .panel.build > .panel-collapse .panel.active.reveal-open > .panel-heading {
+        background-color: #008a52; }
+      .x1-ui-left-navigation .panel-group .panel.build > .panel-collapse .panel.active .panel-heading {
+        background-color: rgba(0, 138, 82, 0.2);
+        border-left: 3px solid #008a52; }
+      .x1-ui-left-navigation .panel-group .panel.build > .panel-collapse .panel .accordion-toggle:focus {
+        background-color: rgba(0, 138, 82, 0.1); }
+      .x1-ui-left-navigation .panel-group .panel.optimize > .panel-heading .heading-icon {
+        background-color: #bb4555; }
+      .x1-ui-left-navigation .panel-group .panel.optimize.active > .panel-heading {
+        background-color: #bb4555; }
+        .x1-ui-left-navigation .panel-group .panel.optimize.active > .panel-heading .panel-title > .accordion-toggle:focus {
+          background-color: #bb4555; }
+      .x1-ui-left-navigation .panel-group .panel.optimize > .panel-collapse .panel:hover .panel-heading {
+        background-color: rgba(187, 69, 85, 0.1); }
+      .x1-ui-left-navigation .panel-group .panel.optimize > .panel-collapse .panel.active.reveal-open > .panel-heading {
+        background-color: #bb4555; }
+      .x1-ui-left-navigation .panel-group .panel.optimize > .panel-collapse .panel.active .panel-heading {
+        background-color: rgba(187, 69, 85, 0.2);
+        border-left: 3px solid #bb4555; }
+      .x1-ui-left-navigation .panel-group .panel.optimize > .panel-collapse .panel .accordion-toggle:focus {
+        background-color: rgba(187, 69, 85, 0.1); }
+  .x1-ui-left-navigation .panel.reveal {
+    -webkit-transition: all, 0.2s, ease-in-out;
+    -o-transition: all, 0.2s, ease-in-out;
+    transition: all, 0.2s, ease-in-out;
+    left: -100%; }
+  .x1-ui-left-navigation .panel-collapse .panel-body .panel-group .panel.active.reveal-open {
+    background-color: #777677;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 20;
+    overflow: auto; }
+    .x1-ui-left-navigation .panel-collapse .panel-body .panel-group .panel.active.reveal-open > .panel-heading {
+      height: 50px;
+      border-left: none;
+      border-bottom: 1px solid #5A5A5A; }
+      .x1-ui-left-navigation .panel-collapse .panel-body .panel-group .panel.active.reveal-open > .panel-heading > .panel-title > .accordion-toggle > .name {
+        line-height: 50px;
+        margin-left: 20px;
+        color: #FFFFFF; }
+        .x1-ui-left-navigation .panel-collapse .panel-body .panel-group .panel.active.reveal-open > .panel-heading > .panel-title > .accordion-toggle > .name > .right-icon {
+          display: none; }
+    .x1-ui-left-navigation .panel-collapse .panel-body .panel-group .panel.active.reveal-open > .panel-collapse {
+      height: auto !important; }
+      .x1-ui-left-navigation .panel-collapse .panel-body .panel-group .panel.active.reveal-open > .panel-collapse .panel.include {
+        border-bottom: none; }
+        .x1-ui-left-navigation .panel-collapse .panel-body .panel-group .panel.active.reveal-open > .panel-collapse .panel.include > .panel-heading {
+          height: auto;
+          border: none; }
+
+/**
+ *
+ * Licensed Materials – Property of IBM
+ *
+ * left-navigation.variables.scss
+ *
+ * (C) Copyright IBM Corporation 2015.
+ * U.S. Government Users Restricted Rights:  Use, duplication or disclosure
+ * restricted by GSA ADP Schedule Contract with IBM Corp.
+ *
+ */
+/* X1 UI MIXINS =======================*/

@@ -1,0 +1,342 @@
+/**
+ * @todo deprecate these eventuallyyyyyy
+ */
+/*
+ * end
+ **/
+html {
+  height: 100%;
+  -ms-overflow-style: scrollbar; }
+
+body {
+  padding-top: 0;
+  height: 100%;
+  overflow: hidden; }
+
+a {
+  cursor: pointer; }
+
+.navbar-org {
+  float: left;
+  height: 44px;
+  line-height: 40px;
+  padding: 0;
+  color: #FFFFFF; }
+  .navbar-org .glyphicon {
+    color: #FFFFFF;
+    position: relative;
+    top: 3px; }
+  .navbar-org .org-text {
+    position: relative;
+    top: 1px; }
+
+section[ui-view] {
+  height: 100%;
+  /*
+ * Reset popover styles
+*/ }
+  section[ui-view] .menu-open {
+    margin-left: 260px; }
+  section[ui-view] .btn-hamburger {
+    color: #FFFFFF; }
+    section[ui-view] .btn-hamburger:hover, section[ui-view] .btn-hamburger:focus {
+      text-decoration: none;
+      background-color: #4178BE;
+      color: #FFFFFF; }
+      section[ui-view] .btn-hamburger:hover .glyphicon, section[ui-view] .btn-hamburger:focus .glyphicon {
+        color: #FFFFFF; }
+    section[ui-view] .btn-hamburger.active, section[ui-view] .btn-hamburger:active {
+      background-color: #4178BE;
+      color: #FFFFFF;
+      border-color: #FFFFFF; }
+      section[ui-view] .btn-hamburger.active:focus, section[ui-view] .btn-hamburger:active:focus {
+        background-color: #4178BE; }
+        section[ui-view] .btn-hamburger.active:focus .glyphicon, section[ui-view] .btn-hamburger:active:focus .glyphicon {
+          color: #FFFFFF; }
+      section[ui-view] .btn-hamburger.active .glyphicon, section[ui-view] .btn-hamburger:active .glyphicon {
+        color: #FFFFFF; }
+  section[ui-view] .nav.framework-nav .popover {
+    margin-top: 0; }
+    section[ui-view] .nav.framework-nav .popover .arrow {
+      display: none; }
+    section[ui-view] .nav.framework-nav .popover .popover-content {
+      padding: 0; }
+      section[ui-view] .nav.framework-nav .popover .popover-content a {
+        color: #FFFFFF !important; }
+      section[ui-view] .nav.framework-nav .popover .popover-content .top-nav-menu.list-group .list-group-item {
+        background-color: #4178BE;
+        border: none;
+        border-bottom: 2px solid #5596E6; }
+        section[ui-view] .nav.framework-nav .popover .popover-content .top-nav-menu.list-group .list-group-item:last-child {
+          border-bottom: none; }
+        section[ui-view] .nav.framework-nav .popover .popover-content .top-nav-menu.list-group .list-group-item:hover {
+          background-color: #264A60; }
+
+.panel-title .heading-icon {
+  font-weight: 400; }
+
+.overlay-bee {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 100; }
+  .overlay-bee x1-loading-bee svg {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto; }
+
+.banner-container {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  z-index: 1; }
+
+.subnav {
+  position: relative;
+  width: 100%;
+  height: 44px;
+  top: 44px;
+  transition: all .25s ease-in-out;
+  background-color: #FFFFFF; }
+  .subnav.menu-open {
+    width: calc(100% - 260px); }
+  .subnav .nav.navbar-right > li {
+    border: none; }
+  .subnav .nav.navbar-nav > li > a {
+    color: #000000;
+    border: none; }
+  .subnav .glyphicon {
+    position: relative;
+    top: 2px;
+    right: 5px; }
+  .subnav ul.nav.navbar-nav li.active a {
+    background-color: #FFFFFF;
+    border-top: 2px solid #323232;
+    color: #323232; }
+  .subnav ul.nav.navbar-nav li a {
+    color: #323232; }
+  .subnav ul.nav.navbar-nav .dropdown-menu a {
+    background-color: #FFFFFF; }
+
+.home-content {
+  background-color: #f7f7f7; }
+
+span.ibm-logo {
+  height: 44px;
+  width: 57.391px;
+  background: transparent url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhRE9DVFlQ RSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93 d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+DQo8c3Zn IHZlcnNpb249IjEuMSIgY2xhc3M9ImJhbl9pYm1fdF93IiB4bWxucz0iaHR0cDov L3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3Lncz Lm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCINCgkgd2lkdGg9IjU3LjRw eCIgaGVpZ2h0PSIyMHB4IiB2aWV3Qm94PSIwIDAgNTcuNCAyMCIgZW5hYmxlLWJh Y2tncm91bmQ9Im5ldyAwIDAgNTcuNCAyMCIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+ DQo8Zz4NCgk8cG9seWdvbiBmaWxsPSIjRkZGRkZGIiBwb2ludHM9IjAsMCA5Ljgs MCA5LjgsMS4zIDAsMS4zIDAsMCAJIi8+DQoJPHBvbHlnb24gZmlsbD0iI0ZGRkZG RiIgcG9pbnRzPSIwLDIuNyA5LjgsMi43IDkuOCw0IDAsNCAwLDIuNyAJIi8+DQoJ PHBvbHlnb24gZmlsbD0iI0ZGRkZGRiIgcG9pbnRzPSIyLjgsNS40IDcsNS40IDcs Ni42IDIuOCw2LjYgMi44LDUuNCAJIi8+DQoJPHBvbHlnb24gZmlsbD0iI0ZGRkZG RiIgcG9pbnRzPSIyLjgsOCA3LDggNyw5LjMgMi44LDkuMyAyLjgsOCAJIi8+DQoJ PHBvbHlnb24gZmlsbD0iI0ZGRkZGRiIgcG9pbnRzPSIyLjgsMTAuNyA3LDEwLjcg NywxMiAyLjgsMTIgMi44LDEwLjcgCSIvPg0KCTxwb2x5Z29uIGZpbGw9IiNGRkZG RkYiIHBvaW50cz0iMi44LDEzLjQgNywxMy40IDcsMTQuNyAyLjgsMTQuNyAyLjgs MTMuNCAJIi8+DQoJPHBvbHlnb24gZmlsbD0iI0ZGRkZGRiIgcG9pbnRzPSIwLDE2 LjEgOS44LDE2LjEgOS44LDE3LjMgMCwxNy4zIDAsMTYuMSAJIi8+DQoJPHBvbHln b24gZmlsbD0iI0ZGRkZGRiIgcG9pbnRzPSIwLDE4LjcgOS44LDE4LjcgOS44LDIw IDAsMjAgMCwxOC43IAkiLz4NCgk8cGF0aCBmaWxsPSIjRkZGRkZGIiBkPSJNMTEu MiwyLjdoMTUuMWwwLDBjMC4xLDAuMiwwLjQsMSwwLjQsMS4zbDAsMEgxMS4yVjIu N0wxMS4yLDIuN0wxMS4yLDIuN3oiLz4NCgk8cG9seWdvbiBmaWxsPSIjRkZGRkZG IiBwb2ludHM9IjE0LDUuNCAxOC4yLDUuNCAxOC4yLDYuNiAxNCw2LjYgMTQsNS40 IAkiLz4NCgk8cGF0aCBmaWxsPSIjRkZGRkZGIiBkPSJNMjIuNCw1LjRoNC41bDAs MGMwLDAuMy0wLjEsMS0wLjIsMS4zbDAsMGgtNC4zTDIyLjQsNS40TDIyLjQsNS40 TDIyLjQsNS40eiIvPg0KCTxwYXRoIGZpbGw9IiNGRkZGRkYiIGQ9Ik0xNCwxMC43 aDEwLjhsMCwwYzAuMywwLjIsMC45LDAuOSwxLjIsMS4zbDAsMEgxNFYxMC43TDE0 LDEwLjdMMTQsMTAuN3oiLz4NCgk8cG9seWdvbiBmaWxsPSIjRkZGRkZGIiBwb2lu dHM9IjE0LDEzLjQgMTguMiwxMy40IDE4LjIsMTQuNyAxNCwxNC43IDE0LDEzLjQg CSIvPg0KCTxwYXRoIGZpbGw9IiNGRkZGRkYiIGQ9Ik0yMi40LDEzLjRoNC4zbDAs MGMwLjEsMC4yLDAuMiwxLDAuMiwxLjNsMCwwaC00LjVMMjIuNCwxMy40TDIyLjQs MTMuNEwyMi40LDEzLjR6Ii8+DQoJPHBhdGggZmlsbD0iI0ZGRkZGRiIgZD0iTTEx LjIsMTYuMWgxNS41bDAsMGMwLDAuMy0wLjMsMS0wLjQsMS4zbDAsMEgxMS4yVjE2 LjFMMTEuMiwxNi4xTDExLjIsMTYuMXoiLz4NCgk8cGF0aCBmaWxsPSIjRkZGRkZG IiBkPSJNMTEuMiwxOC43aDE0LjFsMCwwQzI0LDE5LjgsMjIuOSwyMCwyMSwyMGww LDBoLTEuNGgtOC40TDExLjIsMTguN0wxMS4yLDE4LjdMMTEuMiwxOC43eiIvPg0K CTxwb2x5Z29uIGZpbGw9IiNGRkZGRkYiIHBvaW50cz0iMjgsMCAzNiwwIDM2LjUs MS4zIDI4LDEuMyAyOCwwIAkiLz4NCgk8cG9seWdvbiBmaWxsPSIjRkZGRkZGIiBw b2ludHM9IjI4LDIuNyAzNi45LDIuNyAzNy4zLDQgMjgsNCAyOCwyLjcgCSIvPg0K CTxwb2x5Z29uIGZpbGw9IiNGRkZGRkYiIHBvaW50cz0iMzAuOCw1LjQgMzcuOCw1 LjQgMzguMiw2LjYgMzAuOCw2LjYgMzAuOCw1LjQgCSIvPg0KCTxwb2x5Z29uIGZp bGw9IiNGRkZGRkYiIHBvaW50cz0iMzkuOCw4IDQ3LjYsOCA0Ny42LDkuMyA0My40 LDkuMyA0My40LDguMiA0My4xLDkuMyAzOS40LDkuMyAzOS44LDggCSIvPg0KCTxw b2x5Z29uIGZpbGw9IiNGRkZGRkYiIHBvaW50cz0iMzkuMSw5LjMgMzUuNCw5LjMg MzUsOC4yIDM1LDkuMyAzMC44LDkuMyAzMC44LDggMzguNyw4IDM5LjEsOS4zIAki Lz4NCgk8cG9seWdvbiBmaWxsPSIjRkZGRkZGIiBwb2ludHM9IjMwLjgsMTAuNyAz NSwxMC43IDM1LDEyIDMwLjgsMTIgMzAuOCwxMC43IAkiLz4NCgk8cG9seWdvbiBm aWxsPSIjRkZGRkZGIiBwb2ludHM9IjMwLjgsMTMuNCAzNSwxMy40IDM1LDE0Ljcg MzAuOCwxNC43IDMwLjgsMTMuNCAJIi8+DQoJPHBvbHlnb24gZmlsbD0iI0ZGRkZG RiIgcG9pbnRzPSIyOCwxNi4xIDM1LDE2LjEgMzUsMTcuMyAyOCwxNy4zIDI4LDE2 LjEgCSIvPg0KCTxwb2x5Z29uIGZpbGw9IiNGRkZGRkYiIHBvaW50cz0iMjgsMTgu NyAzNSwxOC43IDM1LDIwIDI4LDIwIDI4LDE4LjcgCSIvPg0KCTxwb2x5Z29uIGZp bGw9IiNGRkZGRkYiIHBvaW50cz0iNDIuNCwwIDUwLjQsMCA1MC40LDEuMyA0Miwx LjMgNDIuNCwwIAkiLz4NCgk8cG9seWdvbiBmaWxsPSIjRkZGRkZGIiBwb2ludHM9 IjQxLjYsMi43IDUwLjQsMi43IDUwLjQsNCA0MS4xLDQgNDEuNiwyLjcgCSIvPg0K CTxwb2x5Z29uIGZpbGw9IiNGRkZGRkYiIHBvaW50cz0iNDAuNyw1LjQgNDcuNiw1 LjQgNDcuNiw2LjYgNDAuMiw2LjYgNDAuNyw1LjQgCSIvPg0KCTxwb2x5Z29uIGZp bGw9IiNGRkZGRkYiIHBvaW50cz0iNDMuNCwxMC43IDQ3LjYsMTAuNyA0Ny42LDEy IDQzLjQsMTIgNDMuNCwxMC43IAkiLz4NCgk8cG9seWdvbiBmaWxsPSIjRkZGRkZG IiBwb2ludHM9IjQzLjQsMTMuNCA0Ny42LDEzLjQgNDcuNiwxNC43IDQzLjQsMTQu NyA0My40LDEzLjQgCSIvPg0KCTxwb2x5Z29uIGZpbGw9IiNGRkZGRkYiIHBvaW50 cz0iNDMuNCwxNi4xIDUwLjQsMTYuMSA1MC40LDE3LjMgNDMuNCwxNy4zIDQzLjQs MTYuMSAJIi8+DQoJPHBvbHlnb24gZmlsbD0iI0ZGRkZGRiIgcG9pbnRzPSI0My40 LDE4LjcgNTAuNCwxOC43IDUwLjQsMjAgNDMuNCwyMCA0My40LDE4LjcgCSIvPg0K CTxwb2x5Z29uIGZpbGw9IiNGRkZGRkYiIHBvaW50cz0iMzUuOSwxMC43IDQyLjYs MTAuNyA0Mi4yLDEyIDM2LjMsMTIgMzUuOSwxMC43IAkiLz4NCgk8cG9seWdvbiBm aWxsPSIjRkZGRkZGIiBwb2ludHM9IjM2LjgsMTMuNCA0MS43LDEzLjQgNDEuMiwx NC43IDM3LjIsMTQuNyAzNi44LDEzLjQgCSIvPg0KCTxwb2x5Z29uIGZpbGw9IiNG RkZGRkYiIHBvaW50cz0iMzcuNywxNi4xIDQwLjgsMTYuMSA0MC4zLDE3LjMgMzgu MSwxNy4zIDM3LjcsMTYuMSAJIi8+DQoJPHBvbHlnb24gZmlsbD0iI0ZGRkZGRiIg cG9pbnRzPSIzOC42LDE4LjcgMzkuOSwxOC43IDM5LjQsMjAgMzksMjAgMzguNiwx OC43IAkiLz4NCgk8cGF0aCBmaWxsPSIjRkZGRkZGIiBkPSJNMTQsOS4zaDEwLjhs MCwwYzAuMy0wLjIsMS0wLjksMS4zLTEuM2wwLDBIMTRWOS4zTDE0LDkuM0wxNCw5 LjN6Ii8+DQoJPHBhdGggZmlsbD0iI0ZGRkZGRiIgZD0iTTExLjIsMS4zaDE0LjFs MCwwQzI0LDAuMiwyMi45LDAsMjEsMGwwLDBoLTEuNGgtOC40TDExLjIsMS4zTDEx LjIsMS4zTDExLjIsMS4zeiIvPg0KCTxwYXRoIGZpbGw9IiNGRkZGRkYiIGQ9Ik01 NS4xLDE5LjljMS4yLDAsMi4zLTAuOSwyLjMtMi4yYzAtMS4zLTEtMi4yLTIuMy0y LjJjLTEuMiwwLTIuMywwLjktMi4zLDIuMkM1Mi45LDE5LDUzLjksMTkuOSw1NS4x LDE5LjkNCgkJTDU1LjEsMTkuOXogTTUzLjMsMTcuN2MwLTEuMSwwLjgtMS45LDEu OC0xLjlzMS44LDAuOCwxLjgsMS45cy0wLjgsMS45LTEuOCwxLjlTNTMuMywxOC44 LDUzLjMsMTcuN0w1My4zLDE3Ljd6IE01NC43LDE3LjloMC41DQoJCWwwLjcsMS4x aDAuNGwtMC43LTEuMWMwLjQsMCwwLjctMC4yLDAuNy0wLjdzLTAuMy0wLjctMC45 LTAuN2gtMVYxOWgwLjR2LTEuMUg1NC43eiBNNTQuNywxNy41di0wLjhoMC41YzAu MywwLDAuNiwwLjEsMC42LDAuNA0KCQljMCwwLjQtMC4zLDAuNC0wLjYsMC40SDU0 LjdMNTQuNywxNy41eiIvPg0KPC9nPg0KPC9zdmc+DQo=") no-repeat center center;
+  background-size: 57.391px 20px;
+  margin-left: 20px !important; }
+
+.framework-widget-badge {
+  background-color: #E71D32;
+  padding: 4px 5px;
+  text-align: center;
+  border-radius: 20px;
+  font-size: 10px;
+  position: absolute;
+  z-index: 1;
+  top: 5px;
+  left: 20px;
+  line-height: 0.75;
+  color: #FFFFFF; }
+
+.framework-widget-badge.ng-hide-add, .framework-widget-badge.ng-hide-remove {
+  transition: all cubic-bezier(0.445, 0.05, 0.55, 0.95) 0.5s; }
+
+.framework-widget-badge.ng-hide {
+  opacity: 0;
+  transform: scale(0, 0);
+  transform-origin: center center; }
+
+#x1TopNavBrand:hover {
+  background-color: #323232; }
+
+/**
+ * @todo deprecate these eventuallyyyyyy
+ */
+/*
+ * end
+ **/
+.framework-banner {
+  position: relative;
+  top: 44px; }
+  .framework-banner .glyphicon-info-circle {
+    color: #5596E6; }
+  .framework-banner .glyphicon-ok-circle {
+    color: #5AA700; }
+  .framework-banner .banner-msg {
+    padding-left: 10px;
+    position: absolute;
+    max-width: 80%;
+    overflow: hidden;
+    text-overflow: ellipsis; }
+  .framework-banner .glyphicon-remove {
+    height: 100%;
+    float: right; }
+  .framework-banner .glyphicon-remove, .framework-banner .btn-link {
+    cursor: pointer; }
+
+.framework-banner.ng-enter, .framework-banner.ng-leave {
+  transition: all cubic-bezier(0.445, 0.05, 0.55, 0.95) 0.3s; }
+
+.framework-banner.ng-enter,
+.framework-banner.ng-leave.ng-leave-active {
+  opacity: 0;
+  transform: scaleY(0);
+  transform-origin: top;
+  height: 0px; }
+
+.framework-banner.ng-leave,
+.framework-banner.ng-enter.ng-enter-active {
+  opacity: 1;
+  transform: scaleY(1);
+  transform-origin: top;
+  height: 40px; }
+
+.framework-breadcrumbs {
+  list-style-type: none;
+  margin: 0;
+  height: 100%;
+  padding-left: 15px;
+  float: left; }
+  .framework-breadcrumbs li {
+    float: left; }
+  .framework-breadcrumbs .crumb, .framework-breadcrumbs .crumb-selected, .framework-breadcrumbs .crumb-dummy {
+    display: inline-block;
+    text-align: center;
+    color: black;
+    padding: 13px 5px 15px 0;
+    text-decoration: none; }
+  .framework-breadcrumbs .crumb:hover {
+    color: #4178BE; }
+  .framework-breadcrumbs .crumb-selected, .framework-breadcrumbs .crumb-dummy {
+    cursor: default; }
+  .framework-breadcrumbs .crumb-selected {
+    font-weight: bold;
+    padding-left: 0; }
+  .framework-breadcrumbs .glyphicon {
+    display: inline-block;
+    position: relative;
+    top: 3px;
+    color: #e0e0e0; }
+  .framework-breadcrumbs .glyphicon.ng-enter {
+    animation: 0.5s appearV; }
+
+.last-crumb.ng-enter {
+  animation: 0.2s appearH; }
+
+@keyframes appearH {
+  from {
+    transform: scaleX(0);
+    transform-origin: left center;
+    opacity: 0; }
+  to {
+    transform: scaleX(1);
+    transform-origin: left center;
+    opacity: 1; } }
+
+@keyframes appearV {
+  from {
+    transform: scaleY(0);
+    transform-origin: center;
+    opacity: 0; }
+  to {
+    transform: scaleY(1);
+    transform-origin: center;
+    opacity: 1; } }
+
+/**
+ * @todo deprecate these eventuallyyyyyy
+ */
+/*
+ * end
+ **/
+.switch-org {
+  background: url("/static/images/Sort-16px.svg") 16px center no-repeat;
+  background-size: 16px;
+  padding-left: 40px;
+  overflow: hidden; }
+
+.framework-org-switch {
+  margin: 20px 100px 0;
+  height: 400px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  color: #777677; }
+  .framework-org-switch .org-list-item {
+    padding: 10px 0;
+    border-bottom: 1px solid #E0E0E0; }
+    .framework-org-switch .org-list-item:hover {
+      background: #eef4fe; }
+  .framework-org-switch .org-list-item-selection {
+    display: inline-block;
+    height: 26px;
+    padding-left: 55px; }
+    .framework-org-switch .org-list-item-selection.selected {
+      background: url("/static/images/selected-20px.svg") 20px center no-repeat; }
+    .framework-org-switch .org-list-item-selection.empty {
+      background: url("/static/images/empty-20px.svg") 20px center no-repeat; }
+    .framework-org-switch .org-list-item-selection:hover {
+      cursor: pointer; }
+  .framework-org-switch .item-text-wrap {
+    display: inline-block; }
+  .framework-org-switch x1-loading-bee {
+    position: absolute;
+    left: 48%;
+    top: 200px;
+    transition: 0.2s linear opacity; }
+    .framework-org-switch x1-loading-bee.ng-hide {
+      opacity: 0; }
+
+/**
+ * @todo deprecate these eventuallyyyyyy
+ */
+/*
+ * end
+ **/
+section[ui-view] .top-macro-menu-popover .x1-ui-popover.popover {
+  margin-top: 54px;
+  margin-left: -5px; }
+
+section[ui-view] .top-macro-menu-popover .popover {
+  min-width: 70%; }
+  section[ui-view] .top-macro-menu-popover .popover .arrow {
+    display: none; }
+
+section[ui-view] .top-macro-menu-popover .popover-header {
+  background-color: #4178BE;
+  color: #FFFFFF; }
+
+section[ui-view] .top-macro-menu-popover .popover-content {
+  max-height: none;
+  min-width: 200px;
+  margin-top: -10px;
+  padding: 20px 50px 20px 20px;
+  background-color: #4178BE;
+  color: #FFFFFF; }
+
+section[ui-view] .top-macro-menu-popover .macro-menu-popover {
+  min-width: 300px; }
+  section[ui-view] .top-macro-menu-popover .macro-menu-popover ul {
+    padding: 0px 40px 0px 0px; }
+  section[ui-view] .top-macro-menu-popover .macro-menu-popover li {
+    list-style-type: none;
+    font-weight: normal;
+    padding: 0px 0px 10px 0px;
+    cursor: pointer; }
+    section[ui-view] .top-macro-menu-popover .macro-menu-popover li a {
+      color: #FFFFFF;
+      background-color: #4178BE; }
+  section[ui-view] .top-macro-menu-popover .macro-menu-popover .macro-menu-header-title {
+    padding: 0px 40px 0px 10px; }
+  section[ui-view] .top-macro-menu-popover .macro-menu-popover .divider {
+    margin: 10px 0 10px 10px;
+    border-color: #C7C7C7; }

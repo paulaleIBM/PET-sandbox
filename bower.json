@@ -1,0 +1,25 @@
+{
+  "name": "PET_sandbox",
+  "homepage": "https://github.com/paulaleIBM/PET-sandbox",
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular-bootstrap": "^2.3.0",
+    "x1-ui-bootstrap": "^3.8.0",
+    "x1-ui-ng-framework": "^0.1.6",
+    "jquery": "^3.1.1",
+    "x1-ui-ng-top-navigation": "^2.3.1"
+  },
+  "resolutions": {
+    "x1-ui-bootstrap": "~2.10.0",
+    "angular-sanitize": "1.2.17"
+  }
+}

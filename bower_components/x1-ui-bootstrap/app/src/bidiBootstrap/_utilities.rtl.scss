@@ -1,0 +1,15 @@
+//
+// Utility classes
+// --------------------------------------------------
+// Floats in rtl
+// -------------------------
+
+
+[dir="rtl"] {
+  .pull-right {
+    float: left !important;
+  }
+  .pull-left {
+    float: right !important;
+  }
+}

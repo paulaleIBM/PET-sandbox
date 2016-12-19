@@ -1,0 +1,50 @@
+{
+  "name": "x1-ui-ng-loading-bee",
+  "version": "2.0.0",
+  "authors": [
+    "IBM"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "angular": "~1.3.15",
+    "angular-translate": "~2.7.2",
+    "angular-translate-loader-static-files": "~2.7.2",
+    "x1-ui-bootstrap": "3.2.0"
+  },
+  "main": [
+    "dist/x1-ui-ng-loading-bee.min.css",
+    "dist/x1-ui-ng-loading-bee.min.js"
+  ],
+  "ignore": [
+    "app",
+    "bower_components",
+    "node_modules",
+    ".gitignore",
+    ".jshintrc",
+    "package.json",
+    "csslintrc.json",
+    "gulpfile.js",
+    "karma.conf.js",
+    "protractor.conf.js",
+    "sonar-project.properties"
+  ],
+  "devDependencies": {
+    "angular-ui-router": "~0.2.13",
+    "angular-mocks": "~1.3.15",
+    "prism": "gh-pages",
+    "x1-ui-ng-demo-generator": "^2.x"
+  },
+  "resolutions": {
+    "angular": "~1.3.15",
+    "x1-ui-bootstrap": "3.2.0"
+  },
+  "_release": "2.0.0",
+  "_resolution": {
+    "type": "version",
+    "tag": "2.0.0",
+    "commit": "d9730da213327a25041c442699e85e7f307c3d5d"
+  },
+  "_source": "https://gitlabhost.rtp.raleigh.ibm.com/commerce-ui-distribution/bower-x1-ui-ng-loading-bee.git",
+  "_target": "2.0.0",
+  "_originalSource": "x1-ui-ng-loading-bee"
+}

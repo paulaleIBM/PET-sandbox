@@ -1,0 +1,47 @@
+
+[dir="rtl"]{
+  .caret {
+    margin-left: 0;
+    margin-right: 2px;
+  }
+
+  .dropdown-menu {
+    left: auto;
+    right: 0;
+    float: right;
+    text-align: right;
+    &.pull-right {
+      right: auto;
+      left: 0;
+    }
+  }
+
+  .dropdown-menu-right {
+    left: 0;
+    right: auto;
+  }
+
+  .dropdown-menu-left {
+    left: auto;
+    right: 0;
+  }
+
+  .pull-right > .dropdown-menu {
+    right: auto;
+    left: 0;
+  }
+
+  @media (min-width: $grid-float-breakpoint) {
+    .navbar-right {
+      .dropdown-menu {
+        right: auto;
+        left: 0;
+      }
+      .dropdown-menu-left {
+        left: auto;
+        right: 0;
+      }
+    }
+  }
+
+}

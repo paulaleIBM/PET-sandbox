@@ -1,0 +1,16 @@
+<div class="macro-menu-popover">
+    <div class="row">
+            <div ng-class="macroMenuColumnWidth()"
+                     ng-repeat="macroMenuItem in navItems | limitTo: macroMenuColumnLimit ">
+                <span class="macro-menu-header-title">{{macroMenuItem.name | translate}}</span>
+                <hr class="divider">
+              <ul>
+                <li ng-repeat="item in macroMenuItem.items">
+                    <a ng-click="goToUrl(item.state)">
+                        {{item.name| translate}}
+                    </a>
+                </li>
+              </ul>
+            </div>
+    </div>
+</div>

@@ -1,0 +1,204 @@
+<div class="container">
+	<h1 class="page-header">Radio Buttons</h1>
+	<p class="lead">A radio button is a way for a user to choose only one item from a group of items, and it is important that the user see all of the choices available.</p>
+	<tabset>
+        <tab heading="Demo">
+            <p>This demo page is a work in progress.</p>
+            <div class="row">
+                <h3>Radio Button - Stacked</h3>
+                <form class="col-xs-3">
+                    <div class="radio">
+                        <label for="radio1">
+                            <input type="radio" name="radio-example-1" checked="checked" value=""
+                                    id="radio1">
+                            <span>Radio Option 1</span>
+                        </label>
+                    </div>
+                    <div class="radio">
+                        <label for="radio2">
+                            <input type="radio" name="radio-example-1" value="" id="radio2">
+                            <span>Radio Option 2</span>
+                        </label>
+                    </div>
+                    <div class="radio">
+                        <label for="radio3">
+                            <input type="radio" name="radio-example-1" value="" id="radio3"
+                                    disabled="true">
+                            <span>Radio Option 3</span>
+                        </label>
+                    </div>
+                </form>
+                <form class="col-xs-3 radio-bg-dark">
+                    <div class="radio">
+                        <label for="radio4">
+                            <input type="radio" name="radio-example-2" checked="checked"
+                                    value="" id="radio4">
+                            <span>Radio Option 4</span>
+                        </label>
+                    </div>
+                    <div class="radio">
+                        <label for="radio5">
+                            <input type="radio" name="radio-example-2" value="" id="radio5">
+                            <span>Radio Option 5</span>
+                        </label>
+                    </div>
+                    <div class="radio">
+                        <label for="radio6">
+                            <input type="radio" name="radio-example-2" value="" id="radio6"
+                                    disabled="true">
+                            <span>Radio Option 6</span>
+                        </label>
+                    </div>
+                </form>
+            </div><!-- .row -->
+			<div class="highlight">
+				<pre>
+					<code class="language-html" data-lang="html">&lt;form class="col-xs-3">
+	&lt;div class="radio">
+		&lt;label for="radio1">
+			&lt;input type="radio" name="radio-example-1" checked="checked" value="" id="radio1">
+			&lt;span>Radio Option 1&lt;/span>
+		&lt;/label>
+	&lt;/div>
+	&lt;div class="radio">
+		&lt;label for="radio2">
+			&lt;input type="radio" name="radio-example-1" value="" id="radio2">
+			&lt;span>Radio Option 2&lt;/span>
+		&lt;/label>
+	&lt;/div>
+	&lt;div class="radio">
+		&lt;label for="radio3">
+			&lt;input type="radio" name="radio-example-1" value="" id="radio3" disabled="true">
+			&lt;span>Radio Option 3&lt;/span>
+		&lt;/label>
+	&lt;/div>
+&lt;/form></code>
+				</pre>
+			</div><!-- .highlight -->
+            <div class="row">
+                <h3>Radio Button - Inline</h3>
+                <form class="col-xs-12">
+                    <label class="radio-inline" for="radio7">
+                        <input type="radio" name="radio-example-3" checked="checked" value=""
+                                id="radio7">
+                        <span>Radio Option 7</span>
+                    </label>
+                    <label class="radio-inline" for="radio8">
+                        <input type="radio" name="radio-example-3" value="" id="radio8">
+                        <span>Radio Option 8</span>
+                    </label>
+                    <label class="radio-inline" for="radio9">
+                        <input type="radio" name="radio-example-3" value="" id="radio9"
+                                disabled="true">
+                        <span>Radio Option 9</span>
+                    </label>
+                </form>
+                <form class="col-xs-12 radio-bg-dark">
+                    <label class="radio-inline" for="radio10">
+                        <input type="radio" name="radio-example-4" checked="checked" value=""
+                                id="radio10">
+                        <span>Radio Option 10</span>
+                    </label>
+                    <label class="radio-inline" for="radio11">
+                        <input type="radio" name="radio-example-4" value="" id="radio11">
+                        <span>Radio Option 11</span>
+                    </label>
+                    <label class="radio-inline" for="radio12">
+                        <input type="radio" name="radio-example-4" value="" id="radio12"
+                                disabled="true">
+                        <span>Radio Option 12</span>
+                    </label>
+                </form>
+            </div><!-- .row -->
+			<div class="highlight">
+				<pre>
+					<code class="language-html" data-lang="html">&lt;form class="col-xs-12 radio-bg-dark">
+	&lt;label class="radio-inline" for="radio10">
+		&lt;input type="radio" name="radio-example-4" checked="checked" value="" id="radio10">
+		&lt;span>Radio Option 10&lt;/span>
+	&lt;/label>
+	&lt;label class="radio-inline" for="radio11">
+		&lt;input type="radio" name="radio-example-4" value="" id="radio11">
+		&lt;span>Radio Option 11&lt;/span>
+	&lt;/label>
+	&lt;label class="radio-inline" for="radio12">
+		&lt;input type="radio" name="radio-example-4" value="" id="radio12" disabled="true">
+		&lt;span>Radio Option 12&lt;/span>
+	&lt;/label>
+&lt;/form></code>
+				</pre>
+			</div><!-- .highlight -->
+        </tab>
+		<tab heading="UX specifications">
+            <div class="row">
+                <div class="col-md-9">
+                    <h2>What they're for...</h2>
+
+                    <p>A radio button is a way for a user to choose only one item from a group of items, and it is important that the user see all of the choices available.</p>
+
+                    <h2>Use when...</h2>
+                    <p>For mobile applications, radio buttons are displayed with a button-like interface to make them easier to use on small devices. These are often referred to as multi-state toggles, but they are not actually toggles, which have only two choices – on or off (see Toggles).</p>
+                    <p>For desktop applications, radio buttons are still used to show a choice of items, where the user selects only one item.</p>
+
+                    <h2>Implementation</h2>
+                    <ul>
+                        <li>Use at least two radio buttons. Long lists of items can be overwhelming. Keep the number of radio buttons to six – eight.</li>
+                        <li>You can include more than eight radio buttons if there is adequate space and the user would benefit from seeing all the options at one time.</li>
+                        <li>However, typically if you need more than eight radio buttons, use a drop-down list because it conserves space. If you use a group of radio buttons, ensure that the user can see all the options at the same time.</li>
+                        <li>Place the most common or important option first.</li>
+                        <li>One radio button must always be selected. If none of the selections are required (no radio button is selected), include a "None" or "Not applicable" option.</li>
+                    </ul>
+
+                    <h3>Order</h3>
+                    <p>Place the most common or important option first. However, if there is a more natural or logical ordering, use that instead. If there is no natural or logical order, list them in alphabetical order.</p>
+
+                    <h3>Labels</h3>
+                    <ul>
+                        <li>Use a label for a group of radio buttons.</li>
+                        <li>Use sentence style capitalization for a group label.</li>
+                        <li>Do not include a colon at the end of a group label.</li>
+                        <li>Use sentence style capitalization for radio button labels.</li>
+                    </ul>
+                    <h2>States</h2>
+
+                    <dl class="dl-horizontal">
+                        <dt>Default state</dt>
+                        <dd>Ensure that the default radio button is meaningful: choose the option that is most appropriate, most common, has the least risk, or is the current value. There are times when it is appropriate to have no default value.</dd>
+                        <dt>Selected</dt>
+                        <dd>If a radio button is selected, it is the default selection, or the user has selected the radio button. It is possible that an option is chosen as a result of interacting with another form element where dependencies exist.</dd>
+                        <dt>Unselected</dt>
+                        <dd>If a radio button is unselected, it is not the default selection, and was not selected by the user.</dd>
+                        <dt>Disabled</dt>
+                        <dd>If a radio button is disabled, it is one that the user cannot act on. Often times, a user must perform another action first, for example, choose a prerequisite, before this radio button is enabled. A disabled radio button can be selected or unselected. When a disabled radio button controls other UI elements, disable the dependent elements.</dd>
+                    </dl>
+
+                    <h2>Accessibility</h2>
+
+                    <p>Using standard HTML elements, no additional coding is necessary for the individual radio buttons.</p>
+
+                    <p>When a group of radio button is used, provide a text label that describes or identifies the group. For the web, groups of radio buttons are marked up using HTML <code>fieldset</code> and legend elements where the <code>legend</code> is the label for the group.</p>
+
+                    <p>Keyboard accessibility is as follows:</p>
+
+                    <ul>
+                        <li>Web applications must follow the keyboard interaction for radio buttons describe in the WAI-ARIA Authoring Practices</li>
+                        <li>Desktop applications supports tabbing to focus on the first radio button. To navigate to and select the next radio button use the down or right arrow keys, to navigate to and select the previous radio buttons use the up and left arrow keys, and the escape key to return to the original selection.</li>
+                        <li>Radio button groups or individual radio buttons that are disabled are not included in the keyboard navigation order.</li>
+                    </ul>
+
+                    <p>The state of the radio button must be visually apparent in high contrast mode.</p>
+
+                    <p>Custom radio buttons on the web are given a WAI-ARIA <code>role=&quot;radio&quot;</code> and are members of a group of radio controls with <code>role=&quot;radiogroup&quot;</code> on the <code>div</code> containing the group of radio buttons. The visible label is associated with the ARIA group using <code>aria-labelledby</code>.</p>
+
+                    <h2>Globalization</h2>
+
+                    <p>Be aware that translation may cause the radio button text to expand. When planning the radio buttons, ensure that you allow sufficient room for expansion. Globalization Design Guideline A3 has guidance on additional space requirements for text after translation.</p>
+
+                </div><!--/.col-md-9-->
+            </div><!--/.row-->
+		</tab>
+		<tab heading="UX blueprint">
+            <img src="radio-buttons/radiobuttons_blueprints.png" />
+		</tab>
+	</tabset>
+</div>

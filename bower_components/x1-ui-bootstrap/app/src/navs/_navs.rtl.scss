@@ -1,0 +1,51 @@
+
+[dir="rtl"] {
+  .nav {
+    padding-right: 0;
+  }
+
+  .nav-tabs {
+    padding-left: 0;
+    padding-right: 20px;
+
+    > li {
+      float: right;
+      > a {
+        margin: 0 -1px 0 0;
+      }
+    }
+  }
+
+  .nav-pills {
+    > li {
+      float: right;
+      + li {
+        margin-left: 0;
+        margin-right: 2px;
+      }
+    }
+  }
+
+  .nav-stacked {
+    > li {
+      + li {
+        margin-right: 0;
+      }
+    }
+  }
+
+  .nav-justified {
+    > li {
+      > a {
+        margin-left: 0;
+        margin-right:-1px;
+      }
+    }
+  }
+
+  .nav-tabs-justified {
+    > li > a {
+      margin-left: 0;
+    }
+  }
+}

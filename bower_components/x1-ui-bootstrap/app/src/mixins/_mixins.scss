@@ -1,0 +1,119 @@
+/* X1 UI MIXINS =======================*/
+@mixin x1-ui-transition($transition-property, $transition-time, $method) {
+	-webkit-transition: $transition-property $transition-time $method;
+	-moz-transition: $transition-property $transition-time $method;
+	-ms-transition: $transition-property $transition-time $method;
+	-o-transition: $transition-property $transition-time $method;
+	transition: $transition-property $transition-time $method;
+}
+@mixin transform($transforms) {
+	-webkit-transform: $transforms;
+	-moz-transform: $transforms;
+	-ms-transform: $transforms;
+	-o-transform: $transforms;
+	transform: $transforms;
+}
+@mixin transform-style($style) {
+	-webkit-transform-style: $style;
+	-moz-transform-style: $style;
+	-ms-transform-style: $style;
+	-o-transform-style: $style;
+	transform-style: $style;
+}
+@mixin btn-variant($color, $background, $border) {
+	color: $color;
+	background-color: $background;
+	border-color: $background $background $border $background;
+
+	&:hover,
+	&:focus,
+	&.focus,
+	&:active,
+	&.active,
+	.open > &.dropdown-toggle {
+		color: $color;
+		background-color: $border;
+		border-color: $border;
+	}
+	&:active,
+	&.active,
+	.open > &.dropdown-toggle {
+		background-image: none;
+	}
+	&.disabled,
+	&[disabled],
+	fieldset[disabled] & {
+		&,
+		&:hover,
+		&:focus,
+		&.focus,
+		&:active,
+		&.active {
+			background-color: mix($border, $white, 50%);
+			border-color: $border;
+		}
+	}
+
+	.badge {
+		color: $background;
+		background-color: $color;
+	}
+}
+@mixin com-button-size($padding, $font-size, $line-height) {
+	padding: 0 $padding;
+	font-size: $font-size;
+	line-height: $line-height;
+}
+
+// Typography
+
+// [converter] $parent hack
+@mixin com-text-emphasis-variant($parent, $color, $bg-color, $border-color) {
+	#{$parent} {
+		color: $color;
+		background-color: $bg-color;
+		border: 1px solid $border-color;
+		height: 38px;
+		line-height: 38px;
+		padding: 0 20px;
+	}
+}
+
+//
+// Grid system
+// --------------------------------------------------
+
+// Centered container element
+@mixin com-container-fixed($gutter: $container-gutter-width) {
+	margin-right: auto;
+	margin-left: auto;
+	padding-left:  $gutter;
+	padding-right: $gutter;
+	@include clearfix;
+}
+
+
+//
+// Contextual Modals
+// --------------------------------------------------
+
+@mixin com-context-modal($header-bg-color, $header-text-color) {
+	.modal-header {
+		border-color: $header-bg-color;
+		background-color: $header-bg-color;
+
+		.modal-title,
+		.close {
+			color: $header-text-color;
+		}
+	}
+	.modal-body {
+		border-color: $gray70;
+		background-color: $gray70;
+		color: $white;
+	}
+	.modal-footer {
+		background-color: $gray70;
+		border-color: $gray80;
+	}
+}

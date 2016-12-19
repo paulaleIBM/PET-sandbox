@@ -1,0 +1,33 @@
+@charset "UTF-8";
+/**
+ *
+ * Licensed Materials – Property of IBM
+ *
+ * tooltip.scss
+ *
+ * (C) Copyright IBM Corporation 2015.
+ * U.S. Government Users Restricted Rights:  Use, duplication or disclosure
+ * restricted by GSA ADP Schedule Contract with IBM Corp.
+ *
+ */
+/**
+ * @todo deprecate these eventuallyyyyyy
+ */
+/*
+ * end
+ **/
+.x1-ui-tooltip.tooltip .closable {
+  padding-right: 33px; }
+
+.x1-ui-tooltip.tooltip button.close {
+  line-height: 10px;
+  right: 6px; }
+  .x1-ui-tooltip.tooltip button.close:hover span,
+  .x1-ui-tooltip.tooltip button.close:focus span {
+    border-color: #777677; }
+  .x1-ui-tooltip.tooltip button.close .glyphicon {
+    font-size: 10px;
+    color: #777677; }
+
+.x1-ui-tooltip.tooltip .close {
+  top: 10px; }

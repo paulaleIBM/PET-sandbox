@@ -1,0 +1,109 @@
+
+[dir="rtl"] {
+  .btn-group {
+    > .btn {
+      border-left:none;
+      border-right:1px solid;
+    }
+    > .btn:first-child {
+      border-left: initial;
+      border-right: none;
+    }
+    > .btn-white {
+      border-left:none !important;
+      border-right:1px solid $btn-white-border !important;
+    }
+  }
+
+  .btn-group-justified {
+    > .btn {
+      border-left:none !important;
+      border-right:1px solid !important;
+    }
+  }
+
+  .btn-group,
+  .btn-group-vertical {
+    > .btn {
+      float: right;
+    }
+  }
+
+  .btn-group {
+    .btn + .btn,
+    .btn + .btn-group,
+    .btn-group + .btn,
+    .btn-group + .btn-group {
+      margin-left: 0;
+      margin-right: -1px;
+    }
+  }
+
+  .btn-toolbar {
+    margin-left: 0;
+    margin-right: -5px;
+    .btn-group,
+    .input-group {
+      float: right;
+    }
+    > .btn,
+    > .btn-group,
+    > .input-group {
+      margin-left: 5px;
+      margin-right: 5px;
+    }
+  }
+
+  .btn-group > .btn:first-child {
+    margin-right: 0;
+    &:not(:last-child):not(.dropdown-toggle) {
+      @include border-left-radius(0);
+      @include border-right-radius($btn-border-radius);
+    }
+  }
+  .btn-group > .btn:last-child:not(:first-child),
+  .btn-group > .dropdown-toggle:not(:first-child) {
+    @include border-right-radius(0);
+    @include border-left-radius($btn-border-radius);
+  }
+
+  .btn-group > .btn-group {
+    float: right;
+  }
+
+  .btn-group > .btn-group:first-child:not(:last-child) {
+    > .btn:last-child,
+    > .dropdown-toggle {
+      @include border-left-radius(0);
+      @include border-right-radius($btn-border-radius);
+    }
+  }
+  .btn-group > .btn-group:last-child:not(:first-child) > .btn:first-child {
+    @include border-right-radius(0);
+    @include border-left-radius($btn-border-radius);
+  }
+
+  .btn .caret {
+    margin-right: 0;
+  }
+
+  .btn-group-vertical {
+    > .btn + .btn,
+    > .btn + .btn-group,
+    > .btn-group + .btn,
+    > .btn-group + .btn-group {
+      margin-right: 0;
+    }
+  }
+
+  .btn-group-vertical > .btn {
+    &:first-child:not(:last-child) {
+      border-top-left-radius: $border-radius-base;
+      border-top-right-radius: 0;
+    }
+    &:last-child:not(:first-child) {
+      border-bottom-right-radius: $border-radius-base;
+      border-bottom-left-radius: 0;
+    }
+  }
+}

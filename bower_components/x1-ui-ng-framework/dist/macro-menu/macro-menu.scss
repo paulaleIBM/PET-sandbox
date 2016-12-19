@@ -1,0 +1,63 @@
+@import "../../../bower_components/x1-ui-bootstrap/app/src/x1-ui-sass-tools";
+
+
+section[ui-view] {
+
+//Popover styles for top macro menu
+
+  .top-macro-menu-popover {
+	.x1-ui-popover.popover {
+	  margin-top: 54px;
+	  margin-left: -5px;
+
+	}
+	.popover {
+
+	min-width: 70%;
+
+	.arrow {
+	  display: none;
+	}
+  }
+  .popover-header {
+	background-color: $brand-primary;
+	color: $white;
+  }
+
+  .popover-content {
+	max-height: none;
+	min-width: 200px;
+
+	margin-top: -10px;
+	padding: 20px 50px 20px 20px;
+	background-color: $brand-primary;
+	color: $white;
+
+  }
+	.macro-menu-popover {
+	  min-width: 300px;
+
+
+	  ul {
+		padding: 0px 40px 0px 0px;
+	  }
+	  li {
+		list-style-type: none;
+		font-weight: normal;
+		padding: 0px 0px 10px 0px;
+		cursor: pointer;
+		a{
+		  color: $white;
+		  background-color: $brand-primary;
+		}
+	  }
+	  .macro-menu-header-title{
+		padding: 0px 40px 0px 10px;
+	  }
+	  .divider {
+		margin: 10px 0 10px 10px;
+		border-color: $gray20;
+	  }
+	}
+ }
+}

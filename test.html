@@ -1,8 +1,67 @@
 <head>
 <link rel="stylesheet" href="../bower_components/x1-ui-bootstrap/dist/x1-ui-bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+<script type="text/javascript" src="bower_components/x1-ui-bootstrap/app/src/bootstrap/bootstrap.min.js"></script>
+<script type="text/javascript" src="bower_components/x1-ui-ng-top-navigation/dist/x1-ui-ng-top-navigation.min.js"></script>
 </head>
 
 <body>
+	<x1-top-navigation brand="{{'x1UiNgTopNavigationDemo.IBM' | translate}} <strong>{{'x1UiNgTopNavigationDemo.TITLE' | translate}}</strong>" brand-href="#/top-navigation" hamburger="true" is-mobile="true" brand-badge="Beta" class="ng-isolate-scope"><header role="banner" aria-labelledby="x1TopNavBrand" class="x1-ui-top-navigation navbar navbar-inverse" ng-class="{'navbar-fixed-top':isFixed}">
+	<div class="container-fluid">
+		<!-- ngIf: hamburger || brand --><div ng-if="hamburger || brand" class="navbar-header ng-scope">
+			<!-- ngIf: hamburger --><button ng-if="hamburger" type="button" role="button" class="btn-hamburger navbar-toggle ng-scope collapsed" ng-click="broadcastHamburgerClick()" ng-class="{'collapsed':!hamburgerClicked}" title="Primary navigation menu" aria-label="toggle primary navigation menu" tabindex="0">
+				<span class="sr-only ng-scope" translate="x1UiNgTopNavigation.MENU_BTN_SR_TEXT" aria-label="toggle primary navigation menu"></span>
+			</button><!-- end ngIf: hamburger -->
+			<h1 id="x1TopNavBrand" class="navbar-brand" ng-click="broadcastBrandClick()" role="button" tabindex="0">
+				<!-- ngIf: brand --><a ng-if="brand" ng-href="#/top-navigation" ng-bind-html="brand" class="ng-binding ng-scope" href="#/top-navigation"><strong>Watson Marketing</strong></a><!-- end ngIf: brand -->
+			</h1>
+				<span class="sr-only ng-scope" translate="x1UiNgTopNavigation.MOBILE_MENU_BTN_SR_TEXT"></span>
+				<!-- ngIf: collapsed && hamburger --><span ng-if="collapsed &amp;&amp; hamburger" translate="x1UiNgTopNavigation.MOBILE_MENU_EXPAND_TEXT" class="ng-scope"></span><!-- end ngIf: collapsed && hamburger -->
+				<!-- ngIf: !collapsed && hamburger -->
+			</button><!-- end ngIf: isMobile -->
+		</div><!-- end ngIf: hamburger || brand -->
+		<nav ng-transclude="" class="collapse navbar-collapse" ng-class="{'in': !collapsed}" aria-expanded="false" role="navigation" aria-label="primary navigation">
+		<h2 id="x1TopNavSecondary" class="sr-only ng-scope" translate="x1UiNgTopNavigationDemo.NAV2_SR_TEXT">Start of secondary navigation</h2>
+		<ul class="nav navbar-nav navbar-right ng-scope" role="menu" aria-labelledby="x1TopNavSecondary">
+			<li role="menuitem"><a href="">
+				<span class="glyphicon glyphicon-md glyphicon-calendar pull-left" aria-hidden="true"></span>
+				<span translate="x1UiNgTopNavigationDemo.EXAMPLE1.CALENDAR" class="ng-scope">Calendar</span>
+			</a></li>
+			<li role="menuitem"><a href="">
+				<span class="glyphicon glyphicon-md glyphicon-envelope pull-left" aria-hidden="true"></span>
+				<span translate="x1UiNgTopNavigationDemo.EXAMPLE1.MESSAGES" class="ng-scope">Messages</span>
+			</a></li>
+			<li role="menuitem" class="dropdown" dropdown="">
+				<a href="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" dropdown-toggle="">
+					<span class="glyphicon glyphicon-md glyphicon-user pull-left" aria-hidden="true"></span>
+					<span id="userDropdown" translate="x1UiNgTopNavigationDemo.USER" class="ng-scope">User name</span>
+				</a>
+				<ul class="dropdown-menu" role="menu" aria-labelledby="userDropdown">
+					<li role="menuitem"><a href="" translate="x1UiNgTopNavigationDemo.PROFILE" class="ng-scope">Profile</a></li>
+					<li role="menuitem"><a href="" translate="x1UiNgTopNavigationDemo.LOGOUT" class="ng-scope">Log out</a></li>
+				</ul>
+			</li>
+			<li role="menuitem"><a href="">
+				<span class="glyphicon glyphicon-md glyphicon-question-circle pull-left" aria-hidden="true"></span>
+				<span translate="x1UiNgTopNavigationDemo.HELP" class="ng-scope">Help</span>
+			</a></li>
+			<li role="menuitem">
+				<span class="sr-only ng-scope" translate="x1UiNgTopNavigationDemo.IBM">IBM</span>
+				<!-- ngInclude: 'images/top-nav-ibm-logo.svg' -->
+			</li>
+		</ul>
+	</nav>
+	</div>
+</header>
+</x1-top-navigation>
+	<br>
+	<!-- ngRepeat: event in events track by $index -->
+
+  <!-- end header -->
   <p> hello world </p>
-  <button> this is a button</button>
+  <button class="btn btn-primary"> this is a button</button>
+  <button type="button" class="btn btn-default btn-glyphicon btn-lg">
+	<span class="glyphicon glyphicon-edit" aria-hidden="true"></span>Edit
+</button>
 </body>

@@ -1,0 +1,245 @@
+<div ng-controller="iconographyCtrl" class="container iconography-demo">
+	<h1 class="page-header">Iconography</h1>
+	<p class="lead">Icons are powerful storytelling tools.</p>
+
+	<tabset class="showcase-demo">
+		<tab heading="Demo">
+            <h2>Icons in a font file</h2>
+            <p>We have created our own font file that contains a number of common mono-chromatic icons. This allows the size and color of the
+                icon to be specified using CSS.  These icons are referred to as <em>glyphicons</em>.</p>
+			<h2 id="glyphicons-how-to-use">How to use glyphicons</h2>
+			<p>For performance reasons, all icons require a base class and individual icon class. To
+				use, place the following code just about anywhere. Be sure to leave a space
+				between the icon and text for proper padding.</p>
+
+			<div class="bs-callout bs-callout-danger">
+				<h4>Don't mix with other components</h4>
+				<p>Icon classes cannot be directly combined with other components. They should not
+					be used along with other classes on the same element. Instead, add a nested
+					<code>&lt;span&gt;</code> and apply the icon classes to the
+					<code>&lt;span&gt;</code>.</p>
+			</div>
+			<div class="bs-callout bs-callout-danger">
+				<h4>Only for use on empty elements</h4>
+				<p>Icon classes should only be used on elements that contain no text content and
+					have no child elements.</p>
+			</div>
+			<pre><code class="html"><span class="nt">&lt;span</span> <span class="na">class=</span><span
+				class="s">&quot;glyphicon glyphicon-search&quot;</span><span class="nt">&gt;&lt;/span&gt;</span></code></pre>
+
+			<h2 id="glyphicons-examples">Examples</h2>
+			<p>Use them at different sizes.</p>
+
+			<div class="bs-example">
+				<div class="btn-toolbar" role="toolbar">
+					<span class="glyphicon glyphicon-xs glyphicon-lightbulb"></span> 14px
+					<span class="glyphicon glyphicon-sm glyphicon-lightbulb"></span> 16px (Default)
+					<span class="glyphicon glyphicon-md glyphicon-lightbulb"></span> 20px
+					<span class="glyphicon glyphicon-lg glyphicon-lightbulb"></span> 30px
+				</div>
+			</div>
+			<div class="highlight"><pre><code class="html"><span class="nt"><</span><span class="nt">span</span> <span class="na">class=</span><span class="s">"glyphicon glyphicon-xs glyphicon-lightbulb"</span><span class="nt">><</span><span class="nt">/span></span>
+<span class="nt"><</span><span class="nt">span</span> <span class="na">class=</span><span
+		class="s">"glyphicon glyphicon-sm glyphicon-lightbulb"</span><span
+		class="nt">><</span><span class="nt">/span></span>
+<span class="nt"><</span><span class="nt">span</span> <span class="na">class=</span><span
+		class="s">"glyphicon glyphicon-md glyphicon-lightbulb"</span><span
+		class="nt">><</span><span class="nt">/span></span>
+<span class="nt"><</span><span class="nt">span</span> <span class="na">class=</span><span
+		class="s">"glyphicon glyphicon-lg glyphicon-lightbulb"</span><span
+		class="nt">><</span><span class="nt">/span></span></code></pre>
+			</div>
+
+			<p>Use them in buttons, button groups for a toolbar, navigation, or prepended form
+				inputs.</p>
+
+			<div class="bs-example">
+				<div class="btn-toolbar" role="toolbar">
+					<button type="button" class="btn btn-default btn-lg"><span
+							class="glyphicon glyphicon-save"></span> Save
+					</button>
+					<button type="button" class="btn btn-default"><span
+							class="glyphicon glyphicon-save"></span> Save
+					</button>
+					<button type="button" class="btn btn-default btn-sm"><span
+							class="glyphicon glyphicon-save"></span> Save
+					</button>
+					<button type="button" class="btn btn-default btn-xs"><span
+							class="glyphicon glyphicon-save"></span> Save
+					</button>
+				</div>
+			</div>
+			<div class="highlight"><pre><code class="html"><span class="nt">&lt;button</span> <span
+					class="na">type=</span><span class="s">&quot;button&quot;</span> <span
+					class="na">class=</span><span
+					class="s">&quot;btn btn-default btn-lg&quot;</span><span
+					class="nt">&gt;</span>
+	<span class="nt">&lt;span</span> <span class="na">class=</span><span
+		class="s">&quot;glyphicon glyphicon-save&quot;</span><span
+		class="nt">&gt;&lt;/span&gt;</span> Save
+<span class="nt">&lt;/button&gt;</span></code></pre>
+			</div>
+
+			<p>Use them in a stacked view.</p>
+			<div class="bs-example">
+				<span class="x1-icon-stack-sm">
+					<i class="glyphicon glyphicon-star text-info"></i>
+					<i class="glyphicon glyphicon-star-empty"></i>
+				</span>
+				<span class="x1-icon-stack-md">
+					<i class="glyphicon glyphicon-circle text-success"></i>
+					<i class="glyphicon glyphicon-circle-empty"></i>
+				</span>
+				<span class="x1-icon-stack-lg">
+					<i class="glyphicon glyphicon-diamond text-danger"></i>
+					<i class="glyphicon glyphicon-diamond-empty"></i>
+				</span>
+			</div>
+			<div class="highlight"><pre><code class="language-markup" prism>&lt;span class=&quot;x1-icon-stack-sm&quot;&gt;
+	&lt;i class=&quot;glyphicon glyphicon-star text-info&quot;&gt;&lt;/i&gt;
+	&lt;i class=&quot;glyphicon glyphicon-star-empty&quot;&gt;&lt;/i&gt;
+&lt;/span&gt;
+&lt;span class=&quot;x1-icon-stack-md&quot;&gt;
+	&lt;i class=&quot;glyphicon glyphicon-circle text-success&quot;&gt;&lt;/i&gt;
+	&lt;i class=&quot;glyphicon glyphicon-circle-empty&quot;&gt;&lt;/i&gt;
+&lt;/span&gt;
+&lt;span class=&quot;x1-icon-stack-lg&quot;&gt;
+	&lt;i class=&quot;glyphicon glyphicon-diamond text-danger&quot;&gt;&lt;/i&gt;
+	&lt;i class=&quot;glyphicon glyphicon-diamond-empty&quot;&gt;&lt;/i&gt;
+&lt;/span&gt;</code></pre></div>
+		</tab>
+
+		<tab heading="Glyphicon font list">
+			<div class="bs-glyphicons">
+				<form class="form-horizontal">
+					<div class="form-group">
+						<label for="glyph-search" class="control-label col-sm-1">Search:</label>
+						<div class="col-sm-5">
+							<input id="glyph-search" type="search" ng-model="glyphSearch"
+									class="form-control"
+									aria-describedby="help-block"/>
+						</div>
+						<span id="help-block" class="help-block col-sm-5">Search by glyphicon name
+							to filter the icon list below.</span>
+					</div>
+				</form>
+				<article ng-repeat="glyph in glyphs" class="clearfix">
+					<h3 ng-hide="glyphSearch">{{glyph.group}}</h3>
+					<ul class="bs-glyphicons-list">
+						<li ng-repeat="class in glyph.classes | filter:glyphSearch">
+							<span class="glyphicon {{class}}"></span>
+							<span class="glyphicon-class">glyphicon {{class}}</span>
+						</li>
+					</ul>
+				</article>
+			</div>
+		</tab>
+
+		<tab heading="UX specifications">
+			<p>Icons are powerful storytelling tools. As you use the icons, imagine how the user
+				experiences of your product could be told by the character of the icons
+				alone. As a best practice in accessibility, all non-textual informational
+				elements should have text-based equivalents</p>
+			<p>An icon is typically an on-screen, small graphical image that uses metaphor to
+				represent actions or objects that a user can select or manipulate within a
+				user interface. They provide a quick way to execute commands, open documents, and
+				run programs. Icons are also very useful when searching for an object. Within the
+				context of a product user interface, a graphical element is an icon (static or
+				interactive) or an accent graphic (static only).</p>
+			<p>Peretz uses the IBM Design Language icon style. Thus, the icons are flat and mono-
+				or dichromatic.</p>
+			<p>For IBM Commerce, we’ve designed a set of IBM Commerce-specific icons that addresses
+				the needs of our products while keeping the IBM Design Language styling. For
+				example, for our analytics offerings, we’ve designed icons that use the
+				appropriate metaphors for analytics.</p>
+            <p>We’ll also be translating the over 200+ icons into glyphs – which work in all browsers and on all platforms – so that our development teams can easily incorporate them. </p>
+            <img src="iconography/images/icons.png"/>
+			<h2>Glyphs</h2>
+			<p>Glyphs are visual symbols set at <strong>24 x 24</strong> pixels, the smallest
+				recommended size for touch interfaces. They are distinguished by their easily identifiable solid
+				shape and knocked out details. Use glyphs when formatting a tool bar or on narrow
+				sub-navigation bar. Create glyphs that maintain consistency with their icon
+				counterparts, based on the icon building principles.</p>
+			<h2>Icons</h2>
+			<p>Icons are visual symbols set at <strong>16 x 16, 20 x 20</strong> and <strong>30 x
+				30</strong> pixels. They address the majority of use cases in our software out of the three types (glyphs,
+				icons, and tooling icons).They are comprised of three building blocks: simple
+				geometry, precise outlines and balancing solids. Icons accommodate for limited
+				space, but are sized for interactive, touch-friendly experiences. They can indicate
+				change, provide visual cues for the eye and increase recognition. Take extra care to
+				align the icon to a grid and select a line weight from the size up or down as
+				reference. The line weight from <strong>16 x 16</strong> pixels is carried over
+				to <strong>30 x 30</strong>
+				pixels:</p>
+			<ul>
+				<li><strong>16px x 16px - 1</strong> pixel outline; 6px spacing beside text</li>
+				<li><strong>20px x 20px - 1</strong> pixel outline; 8px spacing beside text</li>
+				<li><strong>30px x 30px - 2</strong> pixel outline; 10px spacing beside text</li>
+			</ul>
+			<p><strong>Alignment:</strong> Center align/Middle align.</p>
+            <img src="iconography/images/icon_sizes.png"/>
+			<h2>Tooling icons</h2>
+			<p>Tooling icons are visual symbols set at <strong>40 x 40</strong> pixels.</p>
+			<p><strong>Alignment:</strong> Center align/Middle align.</p>
+            <img src="iconography/images/tooling_icons_40px.png"/>
+            <h2>Accessibility</h2>
+            <p>Modern versions of assisting technologies will announce CSS generated content, as
+                well as specific Unicode characters. To avoid unintended and confusing output in
+                screen readers (particularly when icons are used purely for decoration), we hide
+                them with the <code>aria-hidden="true"</code> attribute.</p>
+
+
+            <h3>Examples</h3>
+            <p>If you're using an icon to convey meaning (rather than only as a decorative element),
+                ensure that this meaning is also conveyed by applying a <code>sr-only</code>
+                class.</p>
+            <div class="bs-example">
+                <p class="bg-danger" role="alert">
+                    <span class="glyphicon glyphicon-error-circle" aria-hidden="true"></span>
+                    <span class="sr-only">Error:</span>
+                    <span class="alert-text">Enter a valid email address</span>
+                </p>
+
+            </div>
+            <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"alert alert-danger"</span> <span class="na">role=</span><span class="s">"alert"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"glyphicon glyphicon-error-circle"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/span&gt;</span>
+                <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"sr-only"</span><span class="nt">&gt;</span>Error:<span class="nt">&lt;/span&gt;</span>
+                Enter a valid email address
+                <span class="nt">&lt;/div&gt;</span></code></pre></div>
+
+            <p>If you're creating controls with no other text (such as a <code>&lt;button&gt;</code>
+                that only contains an icon), you should always provide alternative content to
+                identify the purpose of the control. In this case, you could add an
+                <code>aria-label</code> attribute on the control itself.</p>
+            <div class="bs-example">
+                <div class="btn-toolbar" role="toolbar">
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-default" aria-label="Save">
+                            <span class="glyphicon glyphicon-md glyphicon-save" aria-hidden="true"></span>
+                        </button>
+                        <button type="button" class="btn btn-default" aria-label="Save As">
+                            <span class="glyphicon glyphicon-md glyphicon-save-as" aria-hidden="true"></span>
+                        </button>
+                        <button type="button" class="btn btn-default" aria-label="Copy">
+                            <span class="glyphicon glyphicon-md glyphicon-copy" aria-hidden="true"></span>
+                        </button>
+                        <button type="button" class="btn btn-default" aria-label="Paste">
+                            <span class="glyphicon glyphicon-md glyphicon-paste" aria-hidden="true"></span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="highlight"><pre><code class="language-html" data-lang="html"><span
+                    class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-default"</span> <span class="na">aria-label=</span><span class="s">"Save As"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"glyphicon glyphicon-md glyphicon-save-as"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/span&gt;</span>
+                <span class="nt">&lt;/button&gt;</span></code></pre></div>
+
+            <h2>Globalization</h2>
+            <p>Please see the IBM Software Globalization Guidelines for Icons: <a href="http://www-01.ibm.com/software/globalization/guidelines/a8.html">http://www-01.ibm.com/software/globalization/guidelines/a8.html</a></p>
+		</tab>
+        <tab heading="UX blueprint">
+            <p>New blueprint due April 30, 2015.</p>
+            <img src="iconography/images/icons_blueprints.png"/>
+        </tab>
+	</tabset>
+</div>

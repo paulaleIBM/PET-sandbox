@@ -1,0 +1,104 @@
+/**
+ * @todo deprecate these eventuallyyyyyy
+ */
+/*
+ * end
+ **/
+
+/**
+ * @todo deprecate these eventuallyyyyyy
+ */
+/*
+ * end
+ **/
+.x1-ui-top-navigation .navbar-brand[id] a strong {
+  font-weight: 700; }
+
+.x1-ui-top-navigation .navbar-brand[id] a {
+  font-weight: 300; }
+
+.x1-ui-top-navigation .btn-hamburger {
+  border-top: 2px solid transparent;
+  height: 44px;
+  margin-right: 10px;
+  padding: 0 12px; }
+  .x1-ui-top-navigation .btn-hamburger:hover, .x1-ui-top-navigation .btn-hamburger:focus {
+    background-color: #4178BE;
+    text-decoration: none; }
+    .x1-ui-top-navigation .btn-hamburger:hover .glyphicon, .x1-ui-top-navigation .btn-hamburger:focus .glyphicon {
+      color: #FFFFFF; }
+  .x1-ui-top-navigation .btn-hamburger.active {
+    background-color: #4178BE;
+    border-top: 2px solid #FFFFFF; }
+    .x1-ui-top-navigation .btn-hamburger.active:hover, .x1-ui-top-navigation .btn-hamburger.active:focus {
+      border-top: 2px solid transparent; }
+    .x1-ui-top-navigation .btn-hamburger.active .glyphicon {
+      color: #FFFFFF; }
+  .x1-ui-top-navigation .btn-hamburger .glyphicon {
+    line-height: 40px;
+    color: #FFFFFF; }
+
+.x1-ui-top-navigation .navbar-brand[id] {
+  padding: 0;
+  margin: 0; }
+  .x1-ui-top-navigation .navbar-brand[id].no-hamburger a {
+    padding: 0 12px; }
+  .x1-ui-top-navigation .navbar-brand[id] a {
+    border-top: 2px solid transparent;
+    line-height: 40px;
+    padding: 0px 10px;
+    display: inline-block;
+    text-decoration: none;
+    color: #FFFFFF; }
+
+.x1-ui-top-navigation .navbar-brand .top-nav-ibm-logo {
+  display: inline-block;
+  margin: 11px 0 11px 30px; }
+  .x1-ui-top-navigation .navbar-brand .top-nav-ibm-logo polygon, .x1-ui-top-navigation .navbar-brand .top-nav-ibm-logo path {
+    fill: #efefef; }
+
+.x1-ui-top-navigation .navbar-brand .badge {
+  background-color: #734098;
+  line-height: 24px;
+  padding: 0px 10px;
+  font-size: 14px;
+  color: #FFFFFF;
+  margin: -4px 10px 0;
+  border-radius: 0; }
+
+.x1-ui-top-navigation .navbar-nav li.active a .glyphicon {
+  color: #FFFFFF; }
+
+.x1-ui-top-navigation .navbar-nav li a:hover .glyphicon, .x1-ui-top-navigation .navbar-nav li a:focus .glyphicon {
+  color: #FFFFFF; }
+
+.x1-ui-top-navigation .navbar-nav li a .glyphicon {
+  margin-top: 1px;
+  color: #efefef; }
+  .x1-ui-top-navigation .navbar-nav li a .glyphicon.pull-left {
+    margin-right: 12px; }
+  .x1-ui-top-navigation .navbar-nav li a .glyphicon.pull-right {
+    margin-left: 12px; }
+
+.x1-ui-top-navigation .navbar-nav li .navbar-brand:hover, .x1-ui-top-navigation .navbar-nav li .navbar-brand:focus {
+  background-color: transparent; }
+
+.x1-ui-top-navigation .navbar-nav .dropdown .dropdown a:hover span:first-child,
+.x1-ui-top-navigation .navbar-nav .dropdown .dropdown a:focus span:first-child {
+  text-decoration: underline; }
+
+.x1-ui-top-navigation .navbar-nav .dropdown .dropdown a .glyphicon {
+  margin: 0; }
+
+.x1-ui-top-navigation .navbar-nav .dropdown .dropdown .dropdown-menu {
+  top: 0;
+  left: 100%; }
+
+.x1-ui-top-navigation .btn-mobile {
+  background-color: transparent;
+  padding: 0 5px 0 0;
+  color: #FFFFFF;
+  border: none;
+  margin: 0; }
+  .x1-ui-top-navigation .btn-mobile span {
+    line-height: 40px; }

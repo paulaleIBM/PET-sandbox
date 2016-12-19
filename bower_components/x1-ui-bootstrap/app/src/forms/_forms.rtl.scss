@@ -1,0 +1,49 @@
+[dir="rtl"] {
+  label {
+	padding-right: 0;
+	padding-left: 15px;
+  }
+
+  input[type="search"] {
+	+ .glyphicon-search {
+	  left: auto;
+	  right: 20px;
+	  + .glyphicon-remove {
+		right: auto;
+		left: 20px;
+	  }
+	}
+  }
+
+  .radio-inline,
+  .checkbox-inline,
+  .radio-inline + .radio-inline,
+  .checkbox-inline + .checkbox-inline {
+	margin: 10px 0 10px 20px;
+  }
+  .radio input[type="radio"],
+  .radio-inline input[type="radio"],
+  .checkbox input[type="checkbox"],
+  .checkbox-inline input[type="checkbox"] {
+	+ span::before {
+	  margin-right: 0;
+	  margin-left: 10px;
+	}
+  }
+
+  .checkbox input[type="checkbox"],
+  .checkbox-inline input[type="checkbox"] {
+	&:checked + span::after {
+	  left: auto;
+	  right: 2px;
+	}
+
+  }
+  .radio input[type="radio"],
+  .radio-inline input[type="radio"] {
+	&:checked + span::after {
+	  left: auto;
+	  right: 3px;
+	}
+  }
+}

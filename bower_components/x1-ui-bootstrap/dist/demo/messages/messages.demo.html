@@ -1,0 +1,84 @@
+<div class="container-fluid">
+	<h1 class="page-header">Messages</h1>
+	<p class="lead">Messages tell the user about something that has occurred or is about to occur in the system that the user needs to know about.</p>
+	<tabset>
+		<tab heading="Demo">
+            <p>Messages are presented to the user in a number of ways, depending on the context and type of message.  See the UX specifications for detailed information on when to use each type.</p>
+			<h2>Banner messages (computed text)</h2>
+			<div class="bs-example">
+				<p class="bg-primary">Text success example.</p>
+				<p class="bg-success">Text success example.</p>
+				<p class="bg-info">Text info example.</p>
+				<p class="bg-warning">Text warning example.</p>
+				<p class="bg-danger">Text error example.</p>
+			</div>
+			<div class="highlight">
+                &lt;p class="bg-primary"&gt;Text success example.&lt;/p&gt;
+                &lt;p class="bg-success"&gt;Text success example.&lt;/p&gt;
+                &lt;p class="bg-info"&gt;Text info example.&lt;/p&gt;
+                &lt;p class="bg-warning"&gt;Text warning example.&lt;/p&gt;
+                &lt;p class="bg-danger"&gt;Text error example.&lt;/p&gt;
+			</div>
+            <h2>Nag message (modal)</h2>
+            <p>See the <a href="http://dev.x1showcase.emmlabs.ibm.com/#/modal">Modal</a> section for the demo of messages in modals.</p>
+            <h2>Field-level message (tooltip)</h2>
+            <p>See the <a href="http://dev.x1showcase.emmlabs.ibm.com/#/tooltip">Tooltip</a> section for the demo of a message in a tooltip.</p>
+		</tab>
+		<tab heading="UX specifications">
+			<h2>Messages</h2>
+
+			<h3>Use when...</h3>
+            <p>Use messages when you need to notify the user about something or ask the user to confirm an action.</p>
+			<h3>Message types</h3>
+            <p>There are five types of messages (use the type name listed as the title of the message popup) and three display styles: </p>
+            <dl class="dl-horizontal">
+                <dt>Error messages:</dt>
+                <dd>Use an error message when the user cannot proceed until the problem is resolved. Error messages are red.</dd>
+                <dt>Warning messages:</dt>
+                <dd>Use a warning message when the user can proceed, but the results might not be what the user expects. Warning messages are yellow.</dd>
+                <dt>Confirmation<br/>messages:</dt>
+                <dd>Use a confirmation message when the user needs to verify that the system should perform the selected action. Confirm all destructive actions. Confirmation messages do not have a set color. They take their color from the message type that matches their severity (usually Warning).</dd>
+                <dt>Alert messages:</dt>
+                <dd>Use an alert message for announcements. Alert messages don’t usually interrupt a user. Alert messages are purple.</dd>
+                <dt>Success messages:</dt>
+                <dd>Use a success message to notify the user of the successful completion of a user task. Success messages don’t usually interrupt a user. Success messages are the brand color. (If you are designing for a product without a brand color, use green for success messages.)</dd>
+                </dl>
+
+            <h3>Display styles</h3>
+			<p>Messages are displayed to the user in a variety of ways depending on the context of the message.</p>
+            <h3>Nag</h3>
+			<p>Nag messages display in a modal dialog and require the user to click a button to return to work.</p>
+            <ul>
+                <li>Nags interrupt the user, so in general you should use nags only for errors, warnings, and confirmations.</li>
+                <li>The color in the modal title bar should match the message type, with the exception of confirmation messages. Usually, confirmation messages are warning messages and use the warning icon and color. However, if you have a confirmation message of another type, use that message type’s color in the title bar.</li>
+                <li>Use the type name as the title of the modal.</li>
+                <li>For all types except confirmation, use a Close button to dismiss the message. For confirmation messages, use two buttons: Cancel and a button whose label reflects its action (Upload, for example, not Yes).
+                </li>
+            </ul>
+            <h3>Field-level</h3>
+            <p>Field-level messages are displayed next to a field and appear in response to the user’s interaction with that field. </p>
+            <ul>
+                <li>Use field-level messages for validation results (errors, warnings, and success messages).</li>
+                <li>Field-level messages are almost never alerts (announcements).</li>
+                <li>If you want to tell users something about a field before they provide a value, use pop-up help, not field-level messages. Field-level messages are in response to something that has happened in the system.</li>
+            </ul>
+            <h3>Banner</h3>
+            <p>Banner messages are displayed toward the top of the UI and do not interrupt the user’s work.</p>
+            <ul>
+                <li>Use banner messages to tell the user something without interrupting the current task.</li>
+                <li>Banner messages can be errors, warnings, alerts, or success messages. Do not use them for confirmations.</li>
+                <li>Banner message are displayed just below the white bar at the top of the UI.</li>
+
+
+            </ul>
+            <h2>Accessibility</h2>
+            <p>See the Accessibility sections for <a href="http://dev.x1showcase.emmlabs.ibm.com/#/modal">Modals</a>, <a href="http://dev.x1showcase.emmlabs.ibm.com/#/tooltip">Tooltips</a> and <a href="http://dev.x1showcase.emmlabs.ibm.com/#/text-fields">Text Fields</a></p>
+            <h2>Globalization</h2>
+            <p>See the Globalization sections for <a href="http://dev.x1showcase.emmlabs.ibm.com/#/modal">Modals</a>, <a href="http://dev.x1showcase.emmlabs.ibm.com/#/tooltip">Tooltips</a> and <a href="http://dev.x1showcase.emmlabs.ibm.com/#/text-fields">Text Fields</a></p>
+		</tab>
+		<tab heading="UX blueprint">
+			<p>For the different message implementations, see the blueprint sections in <a href="http://dev.x1showcase.emmlabs.ibm.com/#/modal">Modals</a>, <a href="http://dev.x1showcase.emmlabs.ibm.com/#/tooltip">Tooltips</a> and <a href="http://dev.x1showcase.emmlabs.ibm.com/#/text-fields">Text Fields</a></p>
+            <img src="message_colors_blueprints.png"/>
+		</tab>
+	</tabset>
+</div>

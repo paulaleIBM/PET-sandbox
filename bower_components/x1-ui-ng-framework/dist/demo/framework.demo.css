@@ -1,0 +1,32 @@
+.app2 {
+  padding: 15px 50px 50px 15px; }
+
+.sub-template {
+  background-color: #676867;
+  padding: 10px 20px;
+  color: #fff;
+  margin: 0; }
+
+.app1 {
+  padding: 15px 50px 50px 15px; }
+
+.status-badge {
+  background-color: red;
+  padding: 1px 5px 0;
+  text-align: center;
+  border-radius: 20px;
+  font-size: 11px;
+  position: absolute;
+  z-index: 1;
+  top: 5px;
+  left: 20px;
+  line-height: 1.25;
+  color: white; }
+
+.umbrella {
+  padding: 15px 50px 50px 15px; }
+
+.logout {
+  background: url("images/Logout-16px.svg") 16px 50% no-repeat;
+  background-size: 16px;
+  padding-left: 40px; }

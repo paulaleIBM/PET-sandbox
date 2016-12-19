@@ -1,0 +1,149 @@
+<div ng-controller="colorsCtrl" class="color-demo container">
+	<h1 class="page-header">Color Palette</h1>
+	<p class="lead">Color brings software to life. Like typography, it speaks to users in different
+		ways. It can attract the eye to certain focal points, help users know what to do next and
+		indicate changes in a system.</p>
+	<tabset>
+		<tab heading="Demo">
+			<h2>How to use</h2>
+			<p>Reference all color variables with one line of code.</p>
+			<div class="bs-callout bs-callout-warning">
+				<h4>@import file required!</h4>
+				<p>Please note that all Sass files using color variables <strong>require</strong> a
+					file import of
+					<code>x1-ui-bootstrap/dist/app/src/x1-ui-sass-tools.scss</code> from you
+					bower component directory.</p>
+			</div>
+			<pre>
+<code class="language-scss" data-lang="scss"><span class="k">@import</span> <span class="s2">"../bower_components/x1-ui-bootstrap/dist/app/src/x1-ui-sass-tools.scss"</span><span
+		class="p">;</span>
+
+<span class="nc">.example-class</span> <span class="p">{</span>
+	<span class="nl">background-color</span><span class="p">:</span> <span class="nt">$white</span><span class="p">;
+}</span></code></pre>
+
+			<h2 id="glyphicons-examples">Examples</h2>
+			<p>Use the color variables at different scales with Sass mixins: opacity and mix.</p>
+			<div class="bs-callout bs-callout-danger">
+				<h4>Warning!</h4>
+				<p>Please note that using the <strong>opacity mixin does not create a color</strong>,
+					it will reveal what's underneath the element through transparency.</p>
+			</div>
+			<div class="bs-example">
+				<div class="color-swatches">
+					<div class="color-swatch opacity-teal"></div>
+					<div class="color-swatch lighten-teal"></div>
+					<div class="color-swatch darken-teal"></div>
+				</div>
+			</div>
+			<div class="highlight"><pre>
+				<code class="language-scss" data-lang="scss"><span class="c1">// #00a6a0 with 50% opacity</span>
+<span class="nc">.opacity-teal</span> <span class="p">{</span>
+	<span class="nl">background-color</span><span class="p">:</span> <span
+			class="nt">rgba</span><span class="o">(</span><span
+			class="nt">$teal</span><span class="o">,</span> <span
+			class="nv">0.5</span><span class="o">)</span><span class="p">;
+}</span>
+
+<span class="c1">// #00a6a0 with 25% #ffffff</span>
+<span class="nc">.lighten-teal</span> <span class="p">{</span>
+	<span class="nl">background-color</span><span class="p">:</span> <span
+			class="nt">mix</span><span class="o">(</span><span
+			class="nt">$white</span><span class="o">,</span> <span
+			class="nt">$teal</span><span class="o">,</span> <span
+			class="nv">25%</span><span class="o">)</span><span class="p">;
+}</span>
+
+<span class="c1">// #00a6a0 with 25% #231F20</span>
+<span class="nc">.darken-teal</span> <span class="p">{</span>
+	<span class="nl">background-color</span><span class="p">:</span> <span
+			class="nt">mix</span><span class="o">(</span><span
+			class="nt">$black</span><span class="o">,</span> <span
+			class="nt">$teal</span><span
+			class="o">,</span> <span class="nv">25%</span><span
+			class="o">)</span><span class="p">;
+}</span></code>
+			</pre></div>
+		</tab>
+
+		<tab heading="Color Palette">
+			<div class="bs-colors">
+				<form class="form-horizontal">
+					<div class="form-group">
+						<label for="color-search" class="control-label col-sm-1">Search:</label>
+						<div class="col-sm-5">
+							<input id="color-search" type="search" ng-model="colorSearch"
+									class="form-control"
+									aria-describedby="help-block"/>
+						</div>
+						<span id="help-block" class="help-block col-sm-5">Search by variable name or hex
+							value to filter the color swatches below.</span>
+					</div>
+				</form>
+				<div class="color-swatches" ng-repeat="shades in colorShades">
+					<div ng-repeat="color in shades | filter:colorSearch"
+							ng-mouseover="hex=true" ng-mouseleave="hex=false"
+							class="color-swatch {{color.textClass}}"
+							style="background-color:{{color.hex}}">
+						<span ng-hide="hex" class="color-text">{{color.variable}}</span>
+						<span ng-show="hex" class="color-text">{{color.hex}}</span>
+					</div>
+				</div>
+			</div>
+		</tab>
+
+        <tab heading="UX specifications">
+            <h2>What it does...</h2>
+            <p>Through contrast, emphasis, and visual appeal, color enhances the user's
+				understanding of UI elements and assists the user in understanding information.
+				Color is applied purposefully to enhance meaning, create clear hierarchies and
+				complement photography.</p>
+            <p>Judicious use of color can make your UI more effective. Color can help users
+                understand certain meanings at a glance. Color can also make your product
+                appear more aesthetically pleasing and refined. When used effectively, color
+                can help the user understand the information presented. Color must never be the
+                only way to communicate context and meaning in your UI--it should only assist in
+                understanding. This restriction is primarily due to accessibility, as not all
+                people see color the same way.</p>
+
+            <p>Peretz uses a subset of the <strong>IBM Design Language</strong> colors. Within
+                the Peretz palette, we created color groups for specific purposes. These groups
+				avoid unpleasant color combinations in the UI and reinforce meaning. For example,
+                having separate colors for navigation and charting emphasizes the distinction
+				between the two. This color blueprint reflects the colors in the IBM Design
+				Language at the time it was created. When changes are made to the <strong>IBM
+					palette</strong>, there might be changes to the Peretz palette to reflect the
+				changes in the <strong>IBM Design Language</strong>.</p>
+
+            <p><a href="https://w3-connections.ibm.com/wikis/form/anonymous/api/wiki/5c78b3c0-91c0-431b-9fd6-1ed58e8aa4ca/page/2868df76-9c2d-41b9-8e4a-1d48c5a7771c/attachment/94c57a8b-53a6-4536-b21e-2deb41d465de/media/x1_PeretzColorSwatches_March6_2015.aco"><span class="glyphicon glyphicon-down-arrow"></span> Download the Peretz Photoshop .ACO palette file</a></p>
+            <p><a href="https://w3-connections.ibm.com/wikis/form/anonymous/api/wiki/5c78b3c0-91c0-431b-9fd6-1ed58e8aa4ca/page/2868df76-9c2d-41b9-8e4a-1d48c5a7771c/attachment/5d3231a4-ebd8-4fbe-a082-55e681fb2369/media/x1_PeretzColorSwatches_March6_2015.ase"><span class="glyphicon glyphicon-down-arrow"></span> Download the Peretz Illustrator .ASE palette file</a></p>
+            <h2>IBM Commerce teal</h2>
+            <p>In IBM Commerce, we’ve taken the teal from the IBM design language as our primary accent color. A consistent strong color enables us to build a consistent set of recognizable IBM Commerce products and helps us create a delightful user experience. Teal evokes feelings of calmness as well as security and trust, which are important parts of our overall story.</p>
+            <p>That said, we do not want an all-teal interface. Use teal sparingly and strategically in order to focus the user on important sections within the page.</p>
+            <p>The rule of thumb is to use teal when you want to draw the user to certain aspects of your interface. Don’t use teal everywhere as it will overwhelm your users, and they won’t know which elements are important.
+            </p>
+            <h3>When it works</h3>
+            <img style="width: 400px;" src="colors/teal_accent_hierarchy.png"/>
+            <p>In this example, teal is used as an accent color to create
+                visual hierarchy on the call to action buttons.</p>
+            <img style="width: 400px;" src="colors/teal_accent_interactions.png"/>
+            <p>In this example, teal draws attention to interactions, both in
+                the storyboard and in the palette.</p>
+            <h3>When it doesn't work</h3>
+            <img style="width: 400px;" src="colors/teal_accent_bad_use.png"/>
+            <p>This overuse of teal can be misleading to what areas are
+                buttons, headers, or accent details within the report.</p>
+            <p>&nbsp;</p>
+        </tab>
+
+		<tab heading="UX blueprint">
+			<br/>
+            <p>IBM Design Language swatch book:
+				<a href="http://www.ibm.com/design/language/resources/swatch-book.shtml">
+					http://www.ibm.com/design/language/resources/swatch-book.shtml</a></p>
+			<img src="colors/colors_blueprints.png" class="img-responsive" />
+            <h2>Accessibility colors</h2>
+            <img src="colors/accessibility_colors.png" class="img-responsive" />
+        </tab>
+	</tabset>
+</div>

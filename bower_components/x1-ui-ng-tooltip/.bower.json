@@ -1,0 +1,49 @@
+{
+  "name": "x1-ui-ng-tooltip",
+  "version": "2.0.12",
+  "authors": [
+    "IBM"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "angular": "~1.3.15",
+    "angular-bootstrap": "~0.12.1",
+    "angular-translate": "~2.7.2",
+    "angular-translate-loader-static-files": "~2.7.2",
+    "x1-ui-bootstrap": "3.2.1"
+  },
+  "main": [
+    "dist/x1-ui-ng-tooltip.min.css",
+    "dist/x1-ui-ng-tooltip.min.js"
+  ],
+  "ignore": [
+    "app",
+    "bower_components",
+    "node_modules",
+    ".gitignore",
+    ".jshintrc",
+    "package.json",
+    "csslintrc.json",
+    "gulpfile.js"
+  ],
+  "devDependencies": {
+    "angular-ui-router": "~0.2.13",
+    "angular-mocks": "~1.3.15",
+    "angular-sanitize": "~1.2.17",
+    "x1-ui-ng-demo-generator": "^2.x",
+    "prism": "gh-pages"
+  },
+  "resolutions": {
+    "angular": "~1.3.15",
+    "x1-ui-bootstrap": "3.2.1"
+  },
+  "_release": "2.0.12",
+  "_resolution": {
+    "type": "version",
+    "tag": "2.0.12",
+    "commit": "06f688c75091186c39f71128d013957806fee062"
+  },
+  "_source": "https://gitlabhost.rtp.raleigh.ibm.com/commerce-ui-distribution/bower-x1-ui-ng-tooltip.git",
+  "_target": "2.0.12",
+  "_originalSource": "x1-ui-ng-tooltip"
+}

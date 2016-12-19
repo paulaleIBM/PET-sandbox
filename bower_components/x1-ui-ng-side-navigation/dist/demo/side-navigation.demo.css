@@ -1,0 +1,34 @@
+/**
+ * @todo deprecate these eventuallyyyyyy
+ */
+/*
+ * end
+ **/
+.x1-ui-side-navigation-demo pre {
+  max-height: 500px; }
+
+.x1-ui-side-navigation-demo .bs-example .nav-demo-btn {
+  margin-bottom: 20px; }
+
+.x1-ui-side-navigation-demo .x1-navigation-wrap {
+  position: relative;
+  height: 500px; }
+  .x1-ui-side-navigation-demo .x1-navigation-wrap .x1-ui-side-navigation {
+    position: absolute;
+    top: 0; }
+
+.x1-ui-side-navigation-demo .sub-template {
+  padding: 8px 15px 0 0;
+  color: #323232;
+  margin: 0; }
+  .x1-ui-side-navigation-demo .sub-template:last-child {
+    padding-bottom: 8px; }
+
+.x1-ui-side-navigation-demo .sub-template-2 {
+  padding: 13px 15px 13px 20px;
+  color: #FFFFFF; }
+
+.x1-ui-side-navigation-demo .nav-demo-click-event {
+  margin: 0 20px;
+  position: relative;
+  top: -8px; }
